@@ -67,12 +67,10 @@ const categoryColors = {
             WeChat {dot(c.channels.wechat_clawbot)}
           </span>
         </div>
-        <div style="flex:1">
-          <p style="font-size:0.82rem;color:var(--sl-color-gray-2);margin:0 0 0.75rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
-            {isZh ? c.description_zh : c.description}
-          </p>
-        </div>
-        <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem">
+        <p style="font-size:0.82rem;color:var(--sl-color-gray-2);margin:0 0 0.75rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
+          {isZh ? c.description_zh : c.description}
+        </p>
+        <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem;margin-top:auto">
           <span style={`color:${categoryColors[c.category] ?? '#9ca3af'};font-weight:500`}>{c.category}</span>
           {c.website && (
             <a
@@ -100,6 +98,7 @@ const categoryColors = {
     color: var(--sl-color-gray-3);
     cursor: pointer;
     font-size: 0.82rem;
+    line-height: 1.5;
     transition: all .15s;
   }
   .flt.active, .flt:hover {
