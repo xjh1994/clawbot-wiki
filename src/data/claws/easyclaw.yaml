@@ -33,6 +33,6 @@ models:
 deployment: local
 tags: [cheetah, skills-store, zero-config]
 verified: true
-notes: CEO Fu Sheng personally demoed it live — the demo went viral ("骨折傅盛直播翻车，龙虾3分钟救场"). Two distinct products: personal and enterprise editions.
-notes_zh: CEO 傅盛直播演示时意外走红（"骨折傅盛直播翻车，龙虾 3 分钟救场"）。个人版和企业版两套独立产品线。
+notes: 'CEO Fu Sheng personally demoed it live — the demo went viral ("骨折傅盛直播翻车，龙虾3分钟救场"). Two distinct products: personal and enterprise editions.'
+notes_zh: 'CEO 傅盛直播演示时意外走红（"骨折傅盛直播翻车，龙虾 3 分钟救场"）。个人版和企业版两套独立产品线。'
 last_updated: "2026-03-23"
