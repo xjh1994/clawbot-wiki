@@ -22,6 +22,7 @@ jobs:
           KEYSTATIC_GITHUB_CLIENT_ID: ${{ secrets.KEYSTATIC_GITHUB_CLIENT_ID }}
           KEYSTATIC_GITHUB_CLIENT_SECRET: ${{ secrets.KEYSTATIC_GITHUB_CLIENT_SECRET }}
           KEYSTATIC_SECRET: ${{ secrets.KEYSTATIC_SECRET }}
+          PUBLIC_KEYSTATIC_GITHUB_APP_SLUG: clawbot-wiki
 
       - name: Remove stale wrangler deploy cache
         run: rm -rf .wrangler/
@@ -32,7 +33,7 @@ jobs:
           const fs = require('fs');
           const cfg = JSON.parse(fs.readFileSync('dist/server/wrangler.json', 'utf8'));
           cfg.routes = [{ pattern: 'clawbot.wiki/*', zone_name: 'clawbot.wiki' }];
-          cfg.vars = { KEYSTATIC_GITHUB_CLIENT_ID: process.env.KEYSTATIC_GITHUB_CLIENT_ID };
+          cfg.vars = { KEYSTATIC_GITHUB_CLIENT_ID: process.env.KEYSTATIC_GITHUB_CLIENT_ID, PUBLIC_KEYSTATIC_GITHUB_APP_SLUG: 'clawbot-wiki' };
           fs.writeFileSync('dist/server/wrangler.json', JSON.stringify(cfg));
           "
         env:
