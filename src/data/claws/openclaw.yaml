@@ -1,0 +1,39 @@
+name: OpenClaw
+name_zh: OpenClaw（原版）
+vendor: Peter Steinberger (Independent)
+vendor_zh: Peter Steinberger（独立开发者）
+website: https://github.com/openclaw/openclaw
+github: https://github.com/openclaw/openclaw
+release_date: "2025-11"
+category: open-source
+description: The original open-source personal AI agent by Austrian developer Peter Steinberger. Runs locally on any OS, privacy-first with all data processed on-device. Supports WhatsApp, Telegram, Slack, Discord, and email. 250K+ GitHub stars as of March 2026 — the fastest-growing open-source project of the year.
+description_zh: 奥地利独立开发者 Peter Steinberger 创作的原版开源 AI 智能体。本地运行，隐私优先，数据不上传。支持 WhatsApp/Telegram/Slack/Discord/邮件等多渠道。截至 2026 年 3 月 GitHub 星标超 25 万，年度增速最快开源项目。
+
+openclaw:
+  fork_type: unrelated
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 0
+
+channels:
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "yes"
+  discord: "yes"
+
+models:
+  default: null
+  supported: [Claude, OpenAI-compatible, Ollama, DeepSeek]
+  local_model: true
+
+deployment: local
+tags: [original, open-source, privacy, local, cross-platform]
+verified: true
+notes: "Originally named Clawdbot (Nov 2025), renamed to OpenClaw on Jan 30, 2026. The Chinese \"小龙虾\" nickname and all \"Claw-series\" products trace back to this project."
+notes_zh: 原名 Clawdbot（2025 年 11 月），2026 年 1 月 30 日更名为 OpenClaw。"小龙虾"昵称及所有国产 Claw 系产品均源于此项目。
+last_updated: "2026-03-23"
