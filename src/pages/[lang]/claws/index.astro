@@ -70,7 +70,18 @@ const categoryColors = {
         </p>
         <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem">
           <span style={`color:${categoryColors[c.category] ?? '#9ca3af'};font-weight:500`}>{c.category}</span>
-          {!c.verified && <span style="color:var(--sl-color-gray-5);margin-left:auto">{isZh ? '待验证' : 'unverified'}</span>}
+          {c.website && (
+            <a
+              href={c.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="event.stopPropagation()"
+              style="margin-left:auto;color:var(--sl-color-accent);text-decoration:none;font-size:0.75rem"
+            >
+              {isZh ? '官网 ↗' : 'Website ↗'}
+            </a>
+          )}
+          {!c.website && !c.verified && <span style="color:var(--sl-color-gray-5);margin-left:auto">{isZh ? '待验证' : 'unverified'}</span>}
         </div>
       </a>
     ))}
