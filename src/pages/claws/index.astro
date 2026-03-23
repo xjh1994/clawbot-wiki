@@ -38,14 +38,16 @@ const categoryColors = {
   <!-- Grid -->
   <div id="grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem">
     {claws.map(c => (
-      <a
-        href={`${base}/claws/${c.slug}/`}
+      <div
+        data-href={`${base}/claws/${c.slug}/`}
         data-wechat={c.channels.wechat_clawbot}
         data-category={c.category}
         data-verified={String(c.verified)}
-        style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem;text-decoration:none;display:block;transition:border-color .15s"
+        class="claw-card"
+        style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem;cursor:pointer;display:block;transition:border-color .15s"
         onmouseover="this.style.borderColor='var(--sl-color-accent)'"
         onmouseout="this.style.borderColor='var(--sl-color-hairline)'"
+        onclick="if(!event.target.closest('a'))location.href=this.dataset.href"
       >
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;margin-bottom:0.5rem">
           <div>
@@ -66,7 +68,6 @@ const categoryColors = {
               href={c.website}
               target="_blank"
               rel="noopener noreferrer"
-              onclick="event.stopPropagation()"
               style="margin-left:auto;color:var(--sl-color-accent);text-decoration:none;font-size:0.75rem"
             >
               官网 ↗
@@ -74,7 +75,7 @@ const categoryColors = {
           )}
           {!c.website && !c.verified && <span style="color:var(--sl-color-gray-5);margin-left:auto">待验证</span>}
         </div>
-      </a>
+      </div>
     ))}
   </div>
 </StarlightPage>
