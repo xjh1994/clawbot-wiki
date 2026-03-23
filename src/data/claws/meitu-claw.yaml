@@ -33,6 +33,6 @@ models:
 deployment: cloud
 tags: [meitu, ima-studio, creative, cloud, multimodal, image, video]
 verified: true
-notes: "Ima Claw" is Meitu's Ima Studio brand product. Cloud-hosted OpenClaw instance with creative skill packs. Bundled plan includes LLM tokens + image/video/audio generation credits. Skills store at imastudio.com/ima-claw/skills.
+notes: '"Ima Claw" is Meitu''s Ima Studio brand product. Cloud-hosted OpenClaw instance with creative skill packs. Bundled plan includes LLM tokens + image/video/audio generation credits. Skills store at imastudio.com/ima-claw/skills.'
 notes_zh: 美图旗下 Ima Studio 品牌产品，云端托管 OpenClaw 实例，附带创意技能包。订阅套餐含 LLM tokens + 图像/视频/音频生成点数，技能市场详见 imastudio.com/ima-claw/skills。
 last_updated: "2026-03-23"
