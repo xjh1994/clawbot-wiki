@@ -10,7 +10,12 @@ function parseAll(): ClawEntry[] {
       const data = parseYaml(raw) as object
       return { slug, ...data } as ClawEntry
     })
-    .sort((a, b) => a.name.localeCompare(b.name))
+    .sort((a, b) => {
+      const a360 = a.slug === '360-security-claw'
+      const b360 = b.slug === '360-security-claw'
+      if (a360 !== b360) return a360 ? 1 : -1
+      return a.name.localeCompare(b.name)
+    })
 }
 
 export function getAllClaws(): ClawEntry[] {
