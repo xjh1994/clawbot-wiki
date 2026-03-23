@@ -49,11 +49,12 @@ jobs:
 
       - name: Set Worker secrets
         run: |
-          printf '{"KEYSTATIC_GITHUB_CLIENT_SECRET":"%s","KEYSTATIC_SECRET":"%s"}' \
-            "$KEYSTATIC_GITHUB_CLIENT_SECRET" "$KEYSTATIC_SECRET" > /tmp/ks-secrets.json
+          printf '{"KEYSTATIC_GITHUB_CLIENT_SECRET":"%s","KEYSTATIC_SECRET":"%s","CLAWBOT_SUBMIT_TOKEN":"%s"}' \
+            "$KEYSTATIC_GITHUB_CLIENT_SECRET" "$KEYSTATIC_SECRET" "$CLAWBOT_SUBMIT_TOKEN" > /tmp/ks-secrets.json
           cd dist/server && npx wrangler secret bulk /tmp/ks-secrets.json
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKER_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           KEYSTATIC_GITHUB_CLIENT_SECRET: ${{ secrets.KEYSTATIC_GITHUB_CLIENT_SECRET }}
           KEYSTATIC_SECRET: ${{ secrets.KEYSTATIC_SECRET }}
+          CLAWBOT_SUBMIT_TOKEN: ${{ secrets.CLAWBOT_SUBMIT_TOKEN }}
