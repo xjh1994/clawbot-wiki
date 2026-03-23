@@ -23,6 +23,9 @@ jobs:
           KEYSTATIC_GITHUB_CLIENT_SECRET: ${{ secrets.KEYSTATIC_GITHUB_CLIENT_SECRET }}
           KEYSTATIC_SECRET: ${{ secrets.KEYSTATIC_SECRET }}
 
+      - name: Remove stale wrangler deploy cache
+        run: rm -rf .wrangler/
+
       - name: Patch wrangler config with custom domain
         run: |
           node -e "
