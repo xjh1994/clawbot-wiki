@@ -44,7 +44,7 @@ const categoryColors = {
         data-category={c.category}
         data-verified={String(c.verified)}
         class="claw-card"
-        style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem;cursor:pointer;display:block;transition:border-color .15s"
+        style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem;cursor:pointer;display:flex;flex-direction:column;transition:border-color .15s"
         onmouseover="this.style.borderColor='var(--sl-color-accent)'"
         onmouseout="this.style.borderColor='var(--sl-color-hairline)'"
         onclick="if(!event.target.closest('a'))location.href=this.dataset.href"
@@ -58,10 +58,10 @@ const categoryColors = {
             WeChat {dot(c.channels.wechat_clawbot)}
           </span>
         </div>
-        <p style="font-size:0.82rem;color:var(--sl-color-gray-2);margin:0 0 0.75rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
+        <p style="font-size:0.82rem;color:var(--sl-color-gray-2);margin:0 0 0.75rem;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
           {c.description_zh}
         </p>
-        <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem">
+        <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem;margin-top:auto">
           <span style={`color:${categoryColors[c.category] ?? '#9ca3af'};font-weight:500`}>{c.category}</span>
           {c.website && (
             <a
@@ -103,7 +103,7 @@ const categoryColors = {
     document.querySelectorAll('.flt').forEach(b => b.classList.remove('active'))
     btn.classList.add('active')
     const f = btn.dataset.filter
-    document.querySelectorAll('#grid > a').forEach(el => {
+    document.querySelectorAll('#grid > .claw-card').forEach(el => {
       const show = f === 'all'
         || (f === 'wechat' && el.dataset.wechat === 'yes')
         || (f === 'open-source' && el.dataset.category === 'open-source')
