@@ -30,6 +30,6 @@ models:
   local_model: null
 
 deployment: local
-tags: [360, security, cybersecurity]
+tags: ["360", security, cybersecurity]
 verified: false
 last_updated: "2026-03-23"
