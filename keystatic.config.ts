@@ -51,8 +51,6 @@ export default config({
         description: fields.text({ label: '产品描述（英文）', multiline: true }),
         description_zh: fields.text({ label: '产品描述（中文）', multiline: true }),
         openclaw: fields.object({
-          label: 'OpenClaw 兼容性',
-          fields: {
             fork_type: fields.select({
               label: '分支类型',
               options: [
@@ -78,11 +76,8 @@ export default config({
             mcp_support: fields.checkbox({ label: '支持 MCP', defaultValue: false }),
             skills_store: fields.checkbox({ label: '技能商店', defaultValue: false }),
             openclaw_lag_days: fields.integer({ label: '落后天数', validation: { isRequired: false } }),
-          },
         }),
         channels: fields.object({
-          label: '渠道支持',
-          fields: {
             wechat_clawbot: channelField('微信 ClawBot'),
             qq: channelField('QQ'),
             wecom: channelField('企业微信'),
@@ -90,15 +85,11 @@ export default config({
             dingtalk: channelField('钉钉'),
             telegram: channelField('Telegram'),
             discord: channelField('Discord'),
-          },
         }),
         models: fields.object({
-          label: '模型支持',
-          fields: {
             default: fields.text({ label: '默认模型', validation: { isRequired: false } }),
             supported: fields.array(fields.text({ label: '模型名' }), { label: '支持模型列表' }),
             local_model: fields.checkbox({ label: '支持本地模型', defaultValue: false }),
-          },
         }),
         deployment: fields.select({
           label: '部署方式',
