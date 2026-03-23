@@ -16,6 +16,7 @@ export default config({
   storage: {
     kind: 'github',
     repo: { owner: 'xjh1994', name: 'clawbot-wiki' },
+    branchPrefix: 'contributions/',
   },
 
   ui: {
