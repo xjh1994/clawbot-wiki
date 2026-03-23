@@ -125,6 +125,7 @@ export const POST = async ({ request }: { request: Request }) => {
         Authorization: `Bearer ${token}`,
         Accept: 'application/vnd.github+json',
         'Content-Type': 'application/json',
+        'User-Agent': 'clawbot-wiki/1.0',
         'X-GitHub-Api-Version': '2022-11-28',
         ...((options?.headers as Record<string, string>) ?? {}),
       },
