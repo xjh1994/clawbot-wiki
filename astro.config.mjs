@@ -8,7 +8,7 @@ export default defineConfig({
   site: 'https://clawbot.wiki',
   adapter: cloudflare({ prerenderEnvironment: 'node' }),
   integrations: [
-    react(),
+    react({ include: ['**/*.{jsx,tsx,js}'] }),
     keystatic(),
     starlight({
       title: 'ClawBot Wiki',

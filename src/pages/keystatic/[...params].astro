@@ -1,0 +1,16 @@
+---
+export const prerender = false
+import KeystaticApp from '../../components/KeystaticApp'
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClawBot Wiki 后台</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body style="margin:0">
+    <KeystaticApp client:only="react" />
+  </body>
+</html>
