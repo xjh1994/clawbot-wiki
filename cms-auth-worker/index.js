@@ -50,25 +50,22 @@ export default {
       const { access_token, error } = await tokenRes.json()
       if (error || !access_token) return new Response(`OAuth error: ${error}`, { status: 400 })
 
-      // Post token back to opener window (Decap CMS ping-pong pattern)
+      // Post token back to opener window (Decap CMS handshake pattern)
       const html = `<!doctype html><html><body><script>
         (function() {
           const token = ${JSON.stringify(access_token)};
           const msg = JSON.stringify({ token, provider: 'github' });
-          function send(target, origin) {
-            target.postMessage('authorization:github:success:' + msg, origin);
-          }
-          // Ping-pong: wait for CMS to ping, then reply to its origin
+          // Step 1: popup sends "authorizing:github" to CMS
+          // Step 2: CMS echoes it back, establishing the trusted origin
+          // Step 3: popup sends token to that origin
           window.addEventListener('message', function(e) {
             if (e.data === 'authorizing:github') {
-              send(e.source, e.origin);
+              e.source.postMessage('authorization:github:success:' + msg, e.origin);
               setTimeout(function() { window.close(); }, 200);
             }
-          });
-          // Fallback: direct postMessage if opener is still available
+          }, false);
           if (window.opener) {
-            send(window.opener, '*');
-            setTimeout(function() { window.close(); }, 500);
+            window.opener.postMessage('authorizing:github', '*');
           }
         })();
       </script></body></html>`
