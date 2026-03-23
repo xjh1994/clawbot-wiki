@@ -22,8 +22,8 @@ export default defineConfig({
           label: 'Overview',
           translations: { 'zh-CN': '概览' },
           items: [
-            { label: 'All Claws', translations: { 'zh-CN': '全部 Claw' }, link: '/claws/' },
-            { label: 'Submit / Edit', translations: { 'zh-CN': '投稿 / 编辑' }, link: '/submit/' },
+            { label: 'All Claws', translations: { 'zh-CN': '全部 Claw' }, link: '/zh/claws/' },
+            { label: 'Submit / Edit', translations: { 'zh-CN': '投稿 / 编辑' }, link: '/zh/submit/' },
           ],
         },
         {
