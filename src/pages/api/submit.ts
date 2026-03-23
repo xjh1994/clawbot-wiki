@@ -133,7 +133,8 @@ export const POST = async ({ request }: { request: Request }) => {
   // Get main branch SHA
   const refRes = await gh(`/repos/${owner}/${repo}/git/ref/heads/main`)
   if (!refRes.ok) {
-    return new Response(JSON.stringify({ error: 'Failed to fetch main branch' }), {
+    const body = await refRes.text()
+    return new Response(JSON.stringify({ error: 'Failed to fetch main branch', status: refRes.status, detail: body }), {
       status: 502,
       headers: { 'Content-Type': 'application/json' },
     })
