@@ -17,7 +17,7 @@ openclaw:
   openclaw_lag_days: 7
 
 channels:
-  wechat_clawbot: "no"
+  wechat_clawbot: "unknown"
   qq: "no"
   wecom: "no"
   feishu: "yes"
@@ -33,6 +33,6 @@ models:
 deployment: cloud
 tags: [bytedance, feishu, cloud, doubao]
 verified: true
-notes: Best for Feishu-centric workflows. Coding Plan Pro users get immediate access; Lite users get 7-day free trial. No WeChat/WeCom/DingTalk support.
+notes: Best for Feishu-centric workflows. Coding Plan Pro users get immediate access; Lite users get 7-day free trial. WeChat ClawBot compatibility unconfirmed — ClawBot launched March 22 (one day before last_updated); ArkClaw was not in the initial supported list (QClaw/WorkBuddy/Lighthouse), but protocol_compat is full so manual connection may work.
 notes_zh: 飞书工作流最佳选择。Coding Plan Pro 用户即刻可用，Lite 用户 7 天免费试用。不支持微信/企业微信/钉钉。
 last_updated: "2026-03-23"
