@@ -1,26 +1,28 @@
-import { readFileSync, readdirSync } from 'fs'
-import { join } from 'path'
-import yaml from 'js-yaml'
+import { parse as parseYaml } from 'yaml'
 import type { ClawEntry } from '../types'
 
-const DATA_DIR = join(process.cwd(), 'src/data/claws')
+const rawFiles = import.meta.glob('./claws/*.yaml', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
+
+function parseAll(): ClawEntry[] {
+  return Object.entries(rawFiles)
+    .map(([path, raw]) => {
+      const slug = path.replace('./claws/', '').replace('.yaml', '')
+      const data = parseYaml(raw) as object
+      return { slug, ...data } as ClawEntry
+    })
+    .sort((a, b) => a.name.localeCompare(b.name))
+}
 
 export function getAllClaws(): ClawEntry[] {
-  const files = readdirSync(DATA_DIR).filter(f => f.endsWith('.yaml'))
-  return files.map(file => {
-    const slug = file.replace('.yaml', '')
-    const raw = readFileSync(join(DATA_DIR, file), 'utf-8')
-    const data = yaml.load(raw) as object
-    return { slug, ...data } as ClawEntry
-  }).sort((a, b) => a.name.localeCompare(b.name))
+  return parseAll()
 }
 
 export function getClawBySlug(slug: string): ClawEntry | undefined {
-  return getAllClaws().find(c => c.slug === slug)
+  return parseAll().find(c => c.slug === slug)
 }
 
 export function getStats() {
-  const claws = getAllClaws()
+  const claws = parseAll()
   return {
     total: claws.length,
     wechat: claws.filter(c => c.channels.wechat_clawbot === 'yes').length,

@@ -1,9 +1,15 @@
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
+import react from '@astrojs/react'
+import keystatic from '@keystatic/astro'
+import cloudflare from '@astrojs/cloudflare'
 
 export default defineConfig({
   site: 'https://clawbot.wiki',
+  adapter: cloudflare({ prerenderEnvironment: 'node' }),
   integrations: [
+    react(),
+    keystatic(),
     starlight({
       title: 'ClawBot Wiki',
       description: 'OpenClaw ecosystem compatibility tracker',
@@ -43,5 +49,4 @@ export default defineConfig({
       ],
     }),
   ],
-  output: 'static',
 })
