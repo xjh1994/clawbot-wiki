@@ -8,7 +8,7 @@ export default defineConfig({
       title: 'ClawBot Wiki',
       description: 'OpenClaw ecosystem compatibility tracker',
       logo: { src: './public/favicon.svg' },
-      defaultLocale: 'en',
+      defaultLocale: 'zh',
       locales: {
         en: { label: 'English' },
         zh: { label: '中文', lang: 'zh-CN' },
