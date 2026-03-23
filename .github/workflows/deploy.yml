@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Cloudflare
 
 on:
   push:
@@ -23,9 +23,19 @@ jobs:
           KEYSTATIC_GITHUB_CLIENT_SECRET: ${{ secrets.KEYSTATIC_GITHUB_CLIENT_SECRET }}
           KEYSTATIC_SECRET: ${{ secrets.KEYSTATIC_SECRET }}
 
-      - name: Deploy to Cloudflare Pages
+      - name: Patch wrangler config with custom domain
+        run: |
+          node -e "
+          const fs = require('fs');
+          const cfg = JSON.parse(fs.readFileSync('dist/server/wrangler.json', 'utf8'));
+          cfg.routes = [{ pattern: 'clawbot.wiki/*', zone_name: 'clawbot.wiki' }];
+          fs.writeFileSync('dist/server/wrangler.json', JSON.stringify(cfg));
+          "
+
+      - name: Deploy Worker (SSR + static assets)
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_WORKER_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist/client --project-name clawbot-wiki --branch main
+          workingDirectory: dist/server
+          command: deploy
