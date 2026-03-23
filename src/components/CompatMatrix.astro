@@ -1,0 +1,46 @@
+---
+import { getAllClaws } from '../data/loader'
+const { lang } = Astro.props
+const claws = getAllClaws()
+
+const dot = (level) => ({
+  yes:     '<span class="compat-yes">✓</span>',
+  no:      '<span class="compat-no">✗</span>',
+  partial: '<span class="compat-partial">~</span>',
+  unknown: '<span class="compat-unknown">?</span>',
+}[level] ?? '<span class="compat-unknown">?</span>')
+
+const base = lang === 'zh' ? '/zh' : '/en'
+---
+<div style="overflow-x:auto;margin:1.5rem 0">
+  <table class="claw-table">
+    <thead>
+      <tr>
+        <th>{lang === 'zh' ? '名称' : 'Name'}</th>
+        <th>{lang === 'zh' ? '厂商' : 'Vendor'}</th>
+        <th>WeChat</th>
+        <th>Feishu</th>
+        <th>DingTalk</th>
+        <th>QQ</th>
+        <th>OpenClaw</th>
+      </tr>
+    </thead>
+    <tbody>
+      {claws.map(c => (
+        <tr>
+          <td>
+            <a href={`${base}/claws/${c.slug}/`} style="color:var(--sl-color-accent);text-decoration:none;font-weight:500">
+              {lang === 'zh' ? c.name_zh : c.name}
+            </a>
+          </td>
+          <td style="color:var(--sl-color-gray-3)">{lang === 'zh' ? c.vendor_zh : c.vendor}</td>
+          <td style="text-align:center" set:html={dot(c.channels.wechat_clawbot)} />
+          <td style="text-align:center" set:html={dot(c.channels.feishu)} />
+          <td style="text-align:center" set:html={dot(c.channels.dingtalk)} />
+          <td style="text-align:center" set:html={dot(c.channels.qq)} />
+          <td style="color:var(--sl-color-gray-3);font-size:0.8rem">{c.openclaw.protocol_compat}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

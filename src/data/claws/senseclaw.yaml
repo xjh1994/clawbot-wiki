@@ -1,0 +1,35 @@
+name: SenseClaw
+name_zh: SenseClaw
+vendor: SenseTime
+vendor_zh: 商汤科技
+release_date: "2026-03"
+category: enterprise
+description: SenseTime's OpenClaw implementation leveraging their computer vision and multimodal AI capabilities.
+description_zh: 商汤科技的 OpenClaw 实现，基于其计算机视觉和多模态 AI 能力。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: SenseNova
+  supported: [SenseNova]
+  local_model: null
+
+deployment: cloud
+tags: [sensetime, vision, multimodal, enterprise]
+verified: false
+last_updated: "2026-03-23"

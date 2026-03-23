@@ -1,0 +1,42 @@
+---
+title: ClawBot Wiki
+description: OpenClaw 生态兼容性追踪器——微信 ClawBot 支持情况、渠道兼容、定制深度一览。
+template: splash
+hero:
+  tagline: 追踪 OpenClaw 生态中每一款 Claw——微信 ClawBot 兼容性、协议深度、支持模型，社区共同维护。
+  actions:
+    - text: 浏览全部 Claw
+      link: /zh/claws/
+      icon: right-arrow
+      variant: primary
+    - text: 投稿 / 编辑
+      link: /zh/submit/
+      icon: pencil
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+import StatsBar from '../../../components/StatsBar.astro'
+import CompatMatrix from '../../../components/CompatMatrix.astro'
+
+<StatsBar lang="zh" />
+
+## 微信 ClawBot 兼容性
+
+当前生态最受关注的问题。2026 年 3 月 22 日微信官方 ClawBot 插件发布，目前只有少数产品支持。
+
+<CompatMatrix lang="zh" />
+
+<CardGrid>
+  <Card title="31+ 款 Claw" icon="magnifier">
+    覆盖腾讯、字节、阿里、百度、开源分支等，社区共同维护。
+  </Card>
+  <Card title="参与贡献" icon="pencil">
+    发现遗漏或信息有误？通过 [CMS 编辑器](/admin/) 投稿或提交 GitHub PR。
+  </Card>
+  <Card title="中英双语" icon="translate">
+    全站中英文支持。
+  </Card>
+  <Card title="自动部署" icon="rocket">
+    每次 GitHub PR 合并自动触发 Cloudflare Pages 部署。
+  </Card>
+</CardGrid>

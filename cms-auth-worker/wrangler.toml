@@ -1,0 +1,11 @@
+name = "cms-auth"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+routes = [
+  { pattern = "cms-auth.clawbot.wiki", custom_domain = true }
+]
+
+[vars]
+# Set via: wrangler secret put GITHUB_CLIENT_ID
+# Set via: wrangler secret put GITHUB_CLIENT_SECRET

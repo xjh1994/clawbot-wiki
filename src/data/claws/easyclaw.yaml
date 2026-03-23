@@ -1,0 +1,35 @@
+name: EasyClaw
+name_zh: EasyClaw
+vendor: Cheetah Mobile
+vendor_zh: 猎豹移动
+release_date: "2026-03"
+category: desktop
+description: Cheetah Mobile's OpenClaw implementation focused on building a rich skill store ecosystem.
+description_zh: 猎豹移动的 OpenClaw 实现，核心亮点是技能商店生态。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: local
+tags: [cheetah, skills-store]
+verified: false
+last_updated: "2026-03-23"

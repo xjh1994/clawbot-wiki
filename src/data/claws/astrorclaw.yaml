@@ -1,0 +1,35 @@
+name: AstronClaw
+name_zh: AstronClaw
+vendor: iFlytek
+vendor_zh: 科大讯飞
+release_date: "2026-03"
+category: desktop
+description: iFlytek's OpenClaw implementation powered by Spark LLM, with speech recognition advantages.
+description_zh: 科大讯飞基于星火大模型的 OpenClaw 实现，具备语音识别优势。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Spark
+  supported: [Spark, DeepSeek]
+  local_model: null
+
+deployment: both
+tags: [iflytek, spark, voice]
+verified: false
+last_updated: "2026-03-23"

@@ -1,0 +1,35 @@
+name: KClaw
+name_zh: KClaw
+vendor: Kuaishou
+vendor_zh: 快手
+release_date: "2026-03"
+category: desktop
+description: Kuaishou's OpenClaw implementation. Expected to integrate with short-video content creation workflows.
+description_zh: 快手的 OpenClaw 实现，预期整合短视频内容创作工作流。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: both
+tags: [kuaishou, short-video, content]
+verified: false
+last_updated: "2026-03-23"

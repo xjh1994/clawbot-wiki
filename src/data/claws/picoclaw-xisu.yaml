@@ -1,0 +1,37 @@
+name: PicoClaw (Xisu)
+name_zh: 矽速 PicoClaw
+vendor: Xisu Technology
+vendor_zh: 矽速科技
+release_date: "2026-03"
+category: embedded
+description: Xisu's PicoClaw — a lightweight edge AI agent. Not related to the open-source PicoClaw (Go rewrite).
+description_zh: 矽速科技的轻量边缘 AI Agent，与开源社区的 PicoClaw（Go 版本）同名但无关联。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: true
+
+deployment: local
+tags: [xisu, edge, embedded]
+verified: false
+notes: "Name collision: open-source PicoClaw is a Go rewrite of OpenClaw, unrelated to this product."
+notes_zh: 注意命名冲突：开源 PicoClaw 是 Go 语言重写版，与此产品无关。
+last_updated: "2026-03-23"

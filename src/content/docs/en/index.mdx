@@ -1,0 +1,42 @@
+---
+title: ClawBot Wiki
+description: OpenClaw ecosystem compatibility tracker — WeChat ClawBot, channels, customization depth.
+template: splash
+hero:
+  tagline: Track every Claw in the OpenClaw ecosystem — WeChat ClawBot compatibility, protocol depth, supported models, and more.
+  actions:
+    - text: Browse All Claws
+      link: /claws/
+      icon: right-arrow
+      variant: primary
+    - text: Submit / Edit
+      link: /submit/
+      icon: pencil
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+import StatsBar from '../../../components/StatsBar.astro'
+import CompatMatrix from '../../../components/CompatMatrix.astro'
+
+<StatsBar lang="en" />
+
+## WeChat ClawBot Compatibility
+
+The most-asked question in the ecosystem right now. Only a handful of products support the official WeChat ClawBot plugin launched March 22, 2026.
+
+<CompatMatrix lang="en" />
+
+<CardGrid>
+  <Card title="31+ Claws Tracked" icon="magnifier">
+    From Tencent, ByteDance, Alibaba, Baidu, open-source forks, and more. Community maintained.
+  </Card>
+  <Card title="Contribute" icon="pencil">
+    Know a Claw that's missing or outdated? Submit via the [CMS editor](/admin/) or open a GitHub PR.
+  </Card>
+  <Card title="Bilingual" icon="translate">
+    Full Chinese and English support throughout the site.
+  </Card>
+  <Card title="Always Fresh" icon="rocket">
+    Every GitHub PR triggers an automatic deploy to Cloudflare Pages.
+  </Card>
+</CardGrid>

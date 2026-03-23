@@ -1,0 +1,35 @@
+name: BocLaw
+name_zh: BocLaw
+vendor: Boyun
+vendor_zh: 博云
+release_date: "2026-03"
+category: cloud
+description: Boyun's cloud-native OpenClaw implementation focused on enterprise cloud operations.
+description_zh: 博云基于 OpenClaw 的云原生 Agent，面向企业云运维场景。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: cloud
+tags: [boyun, cloud, devops]
+verified: false
+last_updated: "2026-03-23"

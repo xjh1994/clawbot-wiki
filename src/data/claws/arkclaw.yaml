@@ -1,0 +1,37 @@
+name: ArkClaw
+name_zh: ArkClaw
+vendor: ByteDance / Volcano Engine
+vendor_zh: 字节跳动 / 火山引擎
+release_date: "2026-03"
+category: cloud
+description: ByteDance's cloud-native OpenClaw platform. No local install required — runs 24/7 in the cloud with Feishu deep integration.
+description_zh: 字节跳动云端 Agent，无需本地安装，24 小时云端运行，深度集成飞书。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 7
+
+channels:
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "yes"
+  dingtalk: "no"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Doubao
+  supported: [Doubao, DeepSeek, GLM]
+  local_model: false
+
+deployment: cloud
+tags: [bytedance, feishu, cloud]
+verified: true
+notes: Strong choice for Feishu-centric enterprise workflows. No WeChat support.
+notes_zh: 飞书用户的首选，不支持微信生态。
+last_updated: "2026-03-23"

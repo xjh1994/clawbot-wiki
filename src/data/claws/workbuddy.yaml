@@ -1,0 +1,37 @@
+name: WorkBuddy
+name_zh: WorkBuddy
+vendor: Tencent
+vendor_zh: 腾讯
+release_date: "2026-03-09"
+category: enterprise
+description: Tencent's enterprise-grade OpenClaw desktop workspace. Zero-deployment, supports 20+ skill packages, MCP, and multi-model switching.
+description_zh: 腾讯企业端桌面 Agent，零配置开箱即用，支持 20+ 技能包、MCP 协议和多模型切换。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 5
+
+channels:
+  wechat_clawbot: "yes"
+  qq: "partial"
+  wecom: "yes"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Hunyuan
+  supported: [Hunyuan, DeepSeek, GLM, Kimi, MiniMax]
+  local_model: true
+
+deployment: local
+tags: [tencent, enterprise, desktop]
+verified: true
+notes: Targets enterprise office automation. Supports parallel multi-agent tasks.
+notes_zh: 定位企业办公自动化，支持多 Agent 并行任务。
+last_updated: "2026-03-23"

@@ -1,0 +1,37 @@
+name: WindClaw
+name_zh: WindClaw
+vendor: Wind (万得)
+vendor_zh: 万得信息
+release_date: "2026-03"
+category: enterprise
+description: Wind Financial's OpenClaw implementation. Significant because Wind is China's leading financial data terminal — expect deep financial data integration.
+description_zh: 万得信息的 OpenClaw 实现。万得是中国领先的金融数据终端，预期深度集成金融数据能力，面向金融从业者。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: both
+tags: [wind, finance, enterprise, data]
+verified: false
+notes: Wind entering the space is a signal that AI agents are reaching financial industry workflows.
+notes_zh: 万得入场是 AI Agent 渗透金融行业工作流的重要信号。
+last_updated: "2026-03-23"

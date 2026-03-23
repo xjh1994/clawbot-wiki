@@ -1,0 +1,35 @@
+name: Yuanqi AIBot
+name_zh: 猎豹元气 AIBot
+vendor: Cheetah Mobile
+vendor_zh: 猎豹移动
+release_date: "2026-03"
+category: desktop
+description: Cheetah Mobile's second OpenClaw product targeting consumer users, distinct from the enterprise-focused EasyClaw.
+description_zh: 猎豹移动的第二款 OpenClaw 产品，定位消费者市场，区别于企业版 EasyClaw。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: local
+tags: [cheetah, consumer]
+verified: false
+last_updated: "2026-03-23"

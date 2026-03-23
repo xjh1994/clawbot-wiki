@@ -1,0 +1,35 @@
+name: JVSClaw
+name_zh: JVSClaw
+vendor: Alibaba Cloud
+vendor_zh: 阿里云
+release_date: "2026-03"
+category: cloud
+description: Alibaba Cloud's JVS-based Claw agent. Details TBD.
+description_zh: 阿里云 JVS 系列 Claw Agent，具体功能待补充。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Qwen
+  supported: [Qwen]
+  local_model: null
+
+deployment: cloud
+tags: [alibaba, cloud]
+verified: false
+last_updated: "2026-03-23"

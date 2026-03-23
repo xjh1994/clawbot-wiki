@@ -1,0 +1,35 @@
+name: Lexiang Knowledge Base (Lobster Edition)
+name_zh: 腾讯乐享知识库·龙虾版
+vendor: Tencent
+vendor_zh: 腾讯
+release_date: "2026-03"
+category: enterprise
+description: Tencent Lexiang's knowledge management platform with OpenClaw integration.
+description_zh: 腾讯乐享知识库的 OpenClaw 集成版本，面向企业知识管理场景。
+
+openclaw:
+  fork_type: compatible
+  protocol_compat: partial
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "yes"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Hunyuan
+  supported: [Hunyuan]
+  local_model: null
+
+deployment: cloud
+tags: [tencent, knowledge-base, enterprise]
+verified: false
+last_updated: "2026-03-23"

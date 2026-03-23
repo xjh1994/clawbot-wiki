@@ -1,0 +1,154 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
+import { getAllClaws, getClawBySlug } from '../../../data/loader'
+
+export function getStaticPaths() {
+  return ['en', 'zh'].flatMap(lang =>
+    getAllClaws().map(c => ({ params: { lang, slug: c.slug } }))
+  )
+}
+
+const { lang, slug } = Astro.params
+const claw = getClawBySlug(slug)
+if (!claw) return Astro.redirect(`/${lang}/claws/`)
+
+const isZh = lang === 'zh'
+const name = isZh ? claw.name_zh : claw.name
+const vendor = isZh ? claw.vendor_zh : claw.vendor
+const description = isZh ? claw.description_zh : claw.description
+const notes = isZh ? claw.notes_zh : claw.notes
+
+const dot = (l) => ({ yes: '✓', no: '✗', partial: '~', unknown: '?' }[l] ?? '?')
+const dotColor = (l) => ({ yes: '#22c55e', no: '#ef4444', partial: '#eab308', unknown: '#6b7280' }[l] ?? '#6b7280')
+
+const channels = [
+  { key: 'wechat_clawbot', label: isZh ? '💬 微信 ClawBot' : '💬 WeChat ClawBot' },
+  { key: 'qq',    label: '🐧 QQ' },
+  { key: 'wecom', label: isZh ? '🏢 企业微信' : '🏢 WeCom' },
+  { key: 'feishu',   label: isZh ? '🪶 飞书' : '🪶 Feishu' },
+  { key: 'dingtalk', label: isZh ? '📎 钉钉' : '📎 DingTalk' },
+  { key: 'telegram', label: '✈️ Telegram' },
+  { key: 'discord',  label: '🎮 Discord' },
+]
+---
+
+<StarlightPage
+  frontmatter={{
+    title: `${name} — ${vendor}`,
+    description,
+  }}
+>
+
+  {!claw.verified && (
+    <div style="border:1px solid #854d0e;background:#451a03;border-radius:0.5rem;padding:0.75rem 1rem;margin-bottom:1.5rem;font-size:0.85rem;color:#fde68a">
+      ⚠️ {isZh ? '社区投稿，尚未验证' : 'Community submitted — not yet verified'}
+    </div>
+  )}
+
+  <p style="color:var(--sl-color-gray-2)">{description}</p>
+
+  <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin:1.25rem 0">
+    {claw.website && (
+      <a href={claw.website} target="_blank" rel="noopener" style="font-size:0.85rem;padding:0.4rem 0.9rem;border:1px solid var(--sl-color-accent);border-radius:0.5rem;color:var(--sl-color-accent);text-decoration:none">
+        {isZh ? '官网 →' : 'Official Site →'}
+      </a>
+    )}
+    {claw.github && (
+      <a href={claw.github} target="_blank" rel="noopener" style="font-size:0.85rem;padding:0.4rem 0.9rem;border:1px solid var(--sl-color-hairline);border-radius:0.5rem;color:var(--sl-color-gray-2);text-decoration:none">
+        GitHub →
+      </a>
+    )}
+    <a
+      href={`https://github.com/xjh1994/clawbot-wiki/edit/main/src/data/claws/${slug}.yaml`}
+      target="_blank" rel="noopener"
+      style="font-size:0.85rem;padding:0.4rem 0.9rem;border:1px solid var(--sl-color-hairline);border-radius:0.5rem;color:var(--sl-color-gray-3);text-decoration:none;margin-left:auto"
+    >
+      {isZh ? '✏️ 编辑此页' : '✏️ Edit on GitHub'}
+    </a>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1.5rem">
+
+    <!-- Channel Compatibility -->
+    <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
+      <h3 style="margin:0 0 1rem;font-size:0.95rem">{isZh ? '渠道兼容性' : 'Channel Compatibility'}</h3>
+      {channels.map(({ key, label }) => (
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.35rem 0;border-bottom:1px solid var(--sl-color-hairline-light)">
+          <span style="font-size:0.85rem;color:var(--sl-color-gray-2)">{label}</span>
+          <span style={`font-weight:600;color:${dotColor(claw.channels[key])}`}>{dot(claw.channels[key])}</span>
+        </div>
+      ))}
+    </div>
+
+    <!-- OpenClaw Details -->
+    <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
+      <h3 style="margin:0 0 1rem;font-size:0.95rem">OpenClaw</h3>
+      {[
+        [isZh ? '协议兼容' : 'Protocol Compat', claw.openclaw.protocol_compat],
+        [isZh ? '分支类型' : 'Fork Type', claw.openclaw.fork_type],
+        ['SOUL.md', claw.openclaw.soul_md === null ? '?' : claw.openclaw.soul_md ? '✓' : '✗'],
+        ['MCP', claw.openclaw.mcp_support === null ? '?' : claw.openclaw.mcp_support ? '✓' : '✗'],
+        [isZh ? '技能商店' : 'Skills Store', claw.openclaw.skills_store === null ? '?' : claw.openclaw.skills_store ? '✓' : '✗'],
+        ...(claw.openclaw.openclaw_lag_days !== null ? [[isZh ? '落后天数' : 'Lag', `${claw.openclaw.openclaw_lag_days}d`]] : []),
+      ].map(([k, v]) => (
+        <div style="display:flex;justify-content:space-between;padding:0.35rem 0;border-bottom:1px solid var(--sl-color-hairline-light);font-size:0.85rem">
+          <span style="color:var(--sl-color-gray-3)">{k}</span>
+          <span style="color:var(--sl-color-gray-1);font-weight:500">{v}</span>
+        </div>
+      ))}
+    </div>
+
+    <!-- Models -->
+    <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
+      <h3 style="margin:0 0 1rem;font-size:0.95rem">{isZh ? '支持模型' : 'Models'}</h3>
+      {claw.models.supported.length > 0 ? (
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          {claw.models.supported.map(m => (
+            <span style={`font-size:0.78rem;padding:0.2rem 0.6rem;border-radius:0.4rem;border:1px solid ${m === claw.models.default ? 'var(--sl-color-accent)' : 'var(--sl-color-hairline)'};color:${m === claw.models.default ? 'var(--sl-color-accent)' : 'var(--sl-color-gray-3)'}`}>
+              {m}{m === claw.models.default ? ' ★' : ''}
+            </span>
+          ))}
+        </div>
+      ) : (
+        <p style="color:var(--sl-color-gray-5);font-size:0.85rem">{isZh ? '暂无数据' : 'No data yet'}</p>
+      )}
+      {claw.models.local_model === true && (
+        <p style="font-size:0.8rem;color:#4ade80;margin-top:0.75rem">✓ {isZh ? '支持本地模型' : 'Local model support'}</p>
+      )}
+    </div>
+
+    <!-- Meta -->
+    <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
+      <h3 style="margin:0 0 1rem;font-size:0.95rem">{isZh ? '基本信息' : 'Meta'}</h3>
+      {[
+        [isZh ? '分类' : 'Category', claw.category],
+        [isZh ? '部署' : 'Deployment', claw.deployment],
+        ...(claw.release_date ? [[isZh ? '发布' : 'Released', claw.release_date]] : []),
+        [isZh ? '最后更新' : 'Updated', claw.last_updated],
+        [isZh ? '状态' : 'Status', claw.verified ? (isZh ? '✓ 已验证' : '✓ Verified') : (isZh ? '待验证' : 'Unverified')],
+      ].map(([k, v]) => (
+        <div style="display:flex;justify-content:space-between;padding:0.35rem 0;border-bottom:1px solid var(--sl-color-hairline-light);font-size:0.85rem">
+          <span style="color:var(--sl-color-gray-3)">{k}</span>
+          <span style="color:var(--sl-color-gray-1)">{v}</span>
+        </div>
+      ))}
+    </div>
+
+  </div>
+
+  {notes && (
+    <div style="margin-top:1.5rem;border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
+      <h3 style="margin:0 0 0.75rem;font-size:0.95rem">{isZh ? '备注' : 'Notes'}</h3>
+      <p style="color:var(--sl-color-gray-2);font-size:0.85rem;margin:0">{notes}</p>
+    </div>
+  )}
+
+  {claw.tags.length > 0 && (
+    <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.4rem">
+      {claw.tags.map(t => (
+        <span style="font-size:0.75rem;color:var(--sl-color-gray-5);border:1px solid var(--sl-color-hairline);border-radius:0.35rem;padding:0.15rem 0.5rem">#{t}</span>
+      ))}
+    </div>
+  )}
+
+</StarlightPage>

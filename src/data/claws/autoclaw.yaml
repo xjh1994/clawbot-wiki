@@ -1,0 +1,35 @@
+name: AutoClaw
+name_zh: AutoClaw
+vendor: Zhipu AI
+vendor_zh: 智谱 AI
+release_date: "2026-03"
+category: desktop
+description: Zhipu AI's OpenClaw implementation powered by GLM series models.
+description_zh: 智谱 AI 基于 GLM 系列模型的 OpenClaw 实现。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: unknown
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: GLM-4
+  supported: [GLM-4, GLM-4-Air, DeepSeek]
+  local_model: null
+
+deployment: both
+tags: [zhipu, glm]
+verified: false
+last_updated: "2026-03-23"

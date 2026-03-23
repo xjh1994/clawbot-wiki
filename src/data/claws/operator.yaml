@@ -1,0 +1,35 @@
+name: Operator (Red Finger)
+name_zh: 百度红手指 Operator
+vendor: Baidu
+vendor_zh: 百度
+release_date: "2026-03"
+category: desktop
+description: Baidu's "Red Finger" Operator agent — a computer-use focused implementation in the OpenClaw ecosystem.
+description_zh: 百度红手指 Operator，专注计算机操控能力的 Agent 实现。
+
+openclaw:
+  fork_type: compatible
+  protocol_compat: partial
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: ERNIE
+  supported: [ERNIE, DeepSeek]
+  local_model: null
+
+deployment: local
+tags: [baidu, operator, desktop]
+verified: false
+last_updated: "2026-03-23"

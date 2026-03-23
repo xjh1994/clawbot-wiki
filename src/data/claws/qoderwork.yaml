@@ -1,0 +1,35 @@
+name: QoderWork
+name_zh: QoderWork
+vendor: Alibaba Cloud
+vendor_zh: 阿里云
+release_date: "2026-03"
+category: enterprise
+description: Alibaba Cloud's coding-focused agent workspace built on OpenClaw.
+description_zh: 阿里云编程方向 Agent 工作空间，基于 OpenClaw 构建。
+
+openclaw:
+  fork_type: compatible
+  protocol_compat: partial
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "yes"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Qwen-Coder
+  supported: [Qwen-Coder, DeepSeek-Coder]
+  local_model: null
+
+deployment: cloud
+tags: [alibaba, coding, cloud]
+verified: false
+last_updated: "2026-03-23"

@@ -1,0 +1,37 @@
+name: Kimi Claw
+name_zh: Kimi Claw
+vendor: Moonshot AI
+vendor_zh: 月之暗面
+release_date: "2026-03"
+category: cloud
+description: Moonshot AI's cloud-hosted OpenClaw. Pre-configured with Kimi K2.5, web search, and 40GB cloud storage. No setup required.
+description_zh: 月之暗面云端 Agent，默认 Kimi K2.5 模型，内置联网搜索与 40GB 云存储，开箱即用。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 5
+
+channels:
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "yes"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Kimi K2.5
+  supported: [Kimi K2.5, DeepSeek]
+  local_model: false
+
+deployment: cloud
+tags: [moonshot, kimi, cloud]
+verified: true
+notes: 40GB cloud storage included. Accessible via web or Feishu bot.
+notes_zh: 附带 40GB 云存储，支持 Web 和飞书机器人接入。
+last_updated: "2026-03-23"

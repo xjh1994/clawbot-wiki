@@ -1,0 +1,35 @@
+name: Meitu Claw
+name_zh: 美图 Claw
+vendor: Meitu
+vendor_zh: 美图
+release_date: "2026-03"
+category: desktop
+description: Meitu's OpenClaw implementation. Expected to focus on creative and image editing workflows.
+description_zh: 美图的 OpenClaw 实现，预期聚焦创意和图像编辑工作流。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: local
+tags: [meitu, image, creative]
+verified: false
+last_updated: "2026-03-23"

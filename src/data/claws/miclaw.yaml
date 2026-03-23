@@ -1,0 +1,35 @@
+name: MiClaw
+name_zh: MiClaw
+vendor: Xiaomi
+vendor_zh: 小米
+release_date: "2026-03"
+category: other
+description: Xiaomi's OpenClaw implementation. Expected to integrate with Xiaomi's IoT ecosystem and smart home devices.
+description_zh: 小米的 OpenClaw 实现，预期深度集成小米 IoT 生态和智能家居设备。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: both
+tags: [xiaomi, iot, smart-home]
+verified: false
+last_updated: "2026-03-23"

@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+/          /en/     302
+/admin     /admin/  302

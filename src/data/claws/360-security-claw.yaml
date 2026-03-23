@@ -1,0 +1,35 @@
+name: 360 Security Claw
+name_zh: 360 安全 Claw
+vendor: 360 Security
+vendor_zh: 360 安全
+release_date: "2026-03"
+category: desktop
+description: 360 Security's OpenClaw implementation with focus on cybersecurity tasks and threat detection.
+description_zh: 360 安全的 OpenClaw 实现，聚焦网络安全任务和威胁检测场景。
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: local
+tags: [360, security, cybersecurity]
+verified: false
+last_updated: "2026-03-23"

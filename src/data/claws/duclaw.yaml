@@ -1,0 +1,35 @@
+name: DuClaw
+name_zh: DuClaw
+vendor: Baidu
+vendor_zh: 百度
+release_date: "2026-03"
+category: desktop
+description: Baidu's multi-platform OpenClaw series spanning desktop, cloud, mobile, and smart home.
+description_zh: 百度全平台 OpenClaw 系列，覆盖桌面、云端、移动和智能家居。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 10
+
+channels:
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: ERNIE
+  supported: [ERNIE, DeepSeek, Qianfan]
+  local_model: true
+
+deployment: both
+tags: [baidu, ernie, multi-platform]
+verified: true
+last_updated: "2026-03-23"

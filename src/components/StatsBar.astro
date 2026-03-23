@@ -1,0 +1,22 @@
+---
+import { getStats } from '../data/loader'
+const { lang } = Astro.props
+const stats = getStats()
+const labels = {
+  en: { total: 'Claws Tracked', wechat: 'WeChat ClawBot', opensource: 'Open Source' },
+  zh: { total: '已收录 Claw', wechat: '支持微信 ClawBot', opensource: '开源项目' },
+}
+const l = labels[lang] ?? labels.en
+---
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0">
+  {[
+    { n: stats.total, label: l.total },
+    { n: stats.wechat, label: l.wechat },
+    { n: stats.opensource, label: l.opensource },
+  ].map(({ n, label }) => (
+    <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.2rem;text-align:center">
+      <div style="font-size:2rem;font-weight:700;color:var(--sl-color-accent)">{n}</div>
+      <div style="font-size:0.8rem;color:var(--sl-color-gray-3);margin-top:0.25rem">{label}</div>
+    </div>
+  ))}
+</div>

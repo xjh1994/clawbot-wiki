@@ -1,0 +1,35 @@
+name: LobsterAI
+name_zh: LobsterAI
+vendor: NetEase Youdao
+vendor_zh: 网易有道
+release_date: "2026-03"
+category: desktop
+description: NetEase Youdao's OpenClaw-based agent. Notable for using "Lobster" instead of "Claw" in branding.
+description_zh: 网易有道的 OpenClaw Agent，品牌用"Lobster"而非"Claw"命名，有道教育基因明显。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: [DeepSeek]
+  local_model: null
+
+deployment: both
+tags: [netease, youdao, education]
+verified: false
+last_updated: "2026-03-23"

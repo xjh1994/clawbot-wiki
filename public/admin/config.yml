@@ -1,0 +1,68 @@
+backend:
+  name: github
+  repo: xjh1994/clawbot-wiki
+  branch: main
+  base_url: https://cms-auth.clawbot.wiki
+
+media_folder: public/logos
+public_folder: /logos
+
+collections:
+  - name: claws
+    label: Claw Products
+    label_singular: Claw
+    folder: src/data/claws
+    create: true
+    slug: "{{slug}}"
+    extension: yaml
+    format: yaml
+    identifier_field: name
+    summary: "{{name}} — {{vendor}}"
+    fields:
+      - { label: "Name (English)", name: name, widget: string }
+      - { label: "Name (Chinese)", name: name_zh, widget: string }
+      - { label: "Vendor (English)", name: vendor, widget: string }
+      - { label: "Vendor (Chinese)", name: vendor_zh, widget: string }
+      - { label: "Website", name: website, widget: string, required: false }
+      - { label: "GitHub URL", name: github, widget: string, required: false }
+      - { label: "Release Date", name: release_date, widget: string, required: false }
+      - label: Category
+        name: category
+        widget: select
+        options: [desktop, cloud, enterprise, open-source, embedded, other]
+      - { label: "Description (EN)", name: description, widget: text }
+      - { label: "Description (ZH)", name: description_zh, widget: text }
+      - label: OpenClaw
+        name: openclaw
+        widget: object
+        fields:
+          - { label: Fork Type, name: fork_type, widget: select, options: [fork, compatible, independent, unrelated, unknown] }
+          - { label: Protocol Compat, name: protocol_compat, widget: select, options: [full, partial, none, unknown] }
+          - { label: SOUL.md, name: soul_md, widget: boolean, required: false }
+          - { label: MCP Support, name: mcp_support, widget: boolean, required: false }
+          - { label: Skills Store, name: skills_store, widget: boolean, required: false }
+          - { label: Lag days, name: openclaw_lag_days, widget: number, required: false }
+      - label: Channels
+        name: channels
+        widget: object
+        fields:
+          - { label: WeChat ClawBot, name: wechat_clawbot, widget: select, options: [yes, no, partial, unknown] }
+          - { label: QQ, name: qq, widget: select, options: [yes, no, partial, unknown] }
+          - { label: WeCom, name: wecom, widget: select, options: [yes, no, partial, unknown] }
+          - { label: Feishu, name: feishu, widget: select, options: [yes, no, partial, unknown] }
+          - { label: DingTalk, name: dingtalk, widget: select, options: [yes, no, partial, unknown] }
+          - { label: Telegram, name: telegram, widget: select, options: [yes, no, partial, unknown] }
+          - { label: Discord, name: discord, widget: select, options: [yes, no, partial, unknown] }
+      - label: Models
+        name: models
+        widget: object
+        fields:
+          - { label: Default, name: default, widget: string, required: false }
+          - { label: Supported, name: supported, widget: list, required: false }
+          - { label: Local Model, name: local_model, widget: boolean, required: false }
+      - { label: Deployment, name: deployment, widget: select, options: [local, cloud, both, other] }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Notes (EN), name: notes, widget: text, required: false }
+      - { label: Notes (ZH), name: notes_zh, widget: text, required: false }
+      - { label: Verified, name: verified, widget: boolean, default: false }
+      - { label: Last Updated, name: last_updated, widget: string }

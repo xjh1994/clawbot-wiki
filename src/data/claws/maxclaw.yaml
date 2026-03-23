@@ -1,0 +1,35 @@
+name: MaxClaw
+name_zh: MaxClaw
+vendor: MiniMax
+vendor_zh: MiniMax
+release_date: "2026-03"
+category: desktop
+description: MiniMax's OpenClaw implementation with multimodal capabilities.
+description_zh: MiniMax 的 OpenClaw 实现，具备多模态能力。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: MiniMax-Text-01
+  supported: [MiniMax-Text-01, MiniMax-VL-01]
+  local_model: null
+
+deployment: both
+tags: [minimax, multimodal]
+verified: false
+last_updated: "2026-03-23"

@@ -1,0 +1,38 @@
+name: QClaw
+name_zh: QClaw
+vendor: Tencent
+vendor_zh: 腾讯
+website: https://qclaw.qq.com
+release_date: "2026-03-09"
+category: desktop
+description: Tencent's local OpenClaw implementation. Standout feature is native WeChat/QQ remote control via QR code scan.
+description_zh: 腾讯本地版 OpenClaw，核心亮点是扫码绑定微信/QQ，可通过手机远程指挥桌面 Agent。
+
+openclaw:
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 3
+
+channels:
+  wechat_clawbot: "yes"
+  qq: "yes"
+  wecom: "yes"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Hunyuan
+  supported: [Hunyuan, DeepSeek, GLM, Kimi, MiniMax]
+  local_model: true
+
+deployment: local
+tags: [tencent, wechat, qq, desktop]
+verified: true
+notes: Currently the only product with official WeChat ClawBot plugin support.
+notes_zh: 目前唯一官方支持微信 ClawBot 插件的产品。
+last_updated: "2026-03-23"

@@ -1,0 +1,37 @@
+name: Xiaoyi Claw
+name_zh: 华为小艺 Claw
+vendor: Huawei
+vendor_zh: 华为
+release_date: "2026-03"
+category: other
+description: Huawei's Celia (小艺) AI assistant with OpenClaw integration, deeply embedded in HarmonyOS ecosystem.
+description_zh: 华为小艺 AI 助手的 OpenClaw 集成版本，深度嵌入鸿蒙 HarmonyOS 生态。
+
+openclaw:
+  fork_type: compatible
+  protocol_compat: partial
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: Pangu
+  supported: [Pangu]
+  local_model: true
+
+deployment: local
+tags: [huawei, harmonyos, celia, on-device]
+verified: false
+notes: Likely on-device inference on Kirin chips. HarmonyOS ecosystem only.
+notes_zh: 可能基于麒麟芯片端侧推理，鸿蒙生态专属。
+last_updated: "2026-03-23"

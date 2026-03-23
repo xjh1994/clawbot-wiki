@@ -1,0 +1,38 @@
+name: ZeroClaw
+name_zh: ZeroClaw
+vendor: Open Source
+vendor_zh: 开源社区
+github: https://github.com/zeroclaw-labs/zeroclaw
+release_date: "2026-02"
+category: open-source
+description: Rust rewrite of OpenClaw. Single 3.4MB static binary, boots in under 10ms, uses less than 5MB RAM. "Fast, small, fully autonomous."
+description_zh: OpenClaw 的 Rust 重写版，3.4MB 静态二进制，启动时间 <10ms，内存占用 <5MB。
+
+openclaw:
+  fork_type: compatible
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
+  openclaw_lag_days: 14
+
+channels:
+  wechat_clawbot: "unknown"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "yes"
+  discord: "yes"
+
+models:
+  default: null
+  supported: [DeepSeek, Ollama, OpenAI-compatible]
+  local_model: true
+
+deployment: local
+tags: [open-source, rust, lightweight, self-hosted]
+verified: true
+notes: Best choice for self-hosted, resource-constrained environments.
+notes_zh: 自托管、低资源场景的最佳选择。
+last_updated: "2026-03-23"
