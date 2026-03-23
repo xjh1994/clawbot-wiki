@@ -32,6 +32,13 @@ models:
   local_model: false
 
 deployment: local
+cloud_deploy:
+  - name: Zeabur
+  - name: Sealos
+  - name: Leapcell
+  - name: 阿里云 ECS
+  - name: 腾讯云 CVM
+  - name: 华为云 ECS
 tags: [netease, youdao, open-source, sandbox]
 verified: true
 notes: All data stored locally in SQLite, never leaves the device. Sensitive operations run in isolated Linux VMs. First month access count ranked top 5 among all Chinese OpenClaw-like agents.

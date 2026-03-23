@@ -32,6 +32,13 @@ models:
   local_model: true
 
 deployment: local
+cloud_deploy:
+  - name: Zeabur
+  - name: Sealos
+  - name: 阿里云函数计算 FC
+  - name: 腾讯云 SCF
+  - name: 华为云函数工作流
+  - name: 火山引擎 VeFaaS
 tags: [zhima, go, open-source, knowledge-base, lightweight]
 verified: true
 notes: Go-based binary is significantly lighter than OpenClaw's Node.js stack. Focuses on built-in local knowledge base as a differentiator.

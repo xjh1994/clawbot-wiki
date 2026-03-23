@@ -115,6 +115,31 @@ const channels = [
       )}
     </div>
 
+    <!-- Cloud Deploy -->
+    {claw.cloud_deploy && claw.cloud_deploy.length > 0 && (
+      <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
+        <h3 style="margin:0 0 1rem;font-size:0.95rem">{isZh ? '快速部署' : 'Quick Deploy'}</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem">
+          {claw.cloud_deploy.map(({ name, url }) => (
+            url ? (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style="font-size:0.82rem;padding:0.35rem 0.8rem;border:1px solid var(--sl-color-accent);border-radius:0.4rem;color:var(--sl-color-accent);text-decoration:none;display:inline-flex;align-items:center;gap:0.3rem"
+              >
+                ↗ {name}
+              </a>
+            ) : (
+              <span style="font-size:0.82rem;padding:0.35rem 0.8rem;border:1px solid var(--sl-color-hairline);border-radius:0.4rem;color:var(--sl-color-gray-3)">
+                {name}
+              </span>
+            )
+          ))}
+        </div>
+      </div>
+    )}
+
     <!-- Meta -->
     <div style="border:1px solid var(--sl-color-hairline);border-radius:0.75rem;padding:1.25rem">
       <h3 style="margin:0 0 1rem;font-size:0.95rem">{isZh ? '基本信息' : 'Meta'}</h3>

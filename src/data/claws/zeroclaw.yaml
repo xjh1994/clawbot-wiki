@@ -32,6 +32,15 @@ models:
   local_model: true
 
 deployment: local
+cloud_deploy:
+  - name: Zeabur
+  - name: Sealos
+  - name: Leapcell
+  - name: Railway
+  - name: Render
+  - name: Fly.io
+  - name: 阿里云函数计算 FC
+  - name: 腾讯云 SCF
 tags: [open-source, rust, lightweight, self-hosted]
 verified: true
 notes: Best choice for self-hosted, resource-constrained environments.

@@ -44,6 +44,8 @@ export interface ClawEntry {
 
   deployment: DeploymentType
 
+  cloud_deploy?: Array<{ name: string; url?: string }>
+
   tags: string[]
   verified: boolean
   notes?: string
