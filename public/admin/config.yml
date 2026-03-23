@@ -3,6 +3,7 @@ backend:
   repo: xjh1994/clawbot-wiki
   branch: main
   base_url: https://cms-auth.clawbot.wiki
+  auth_scope: public_repo
 
 media_folder: public/logos
 public_folder: /logos
