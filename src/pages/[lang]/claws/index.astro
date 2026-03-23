@@ -59,11 +59,11 @@ const categoryColors = {
         onclick="if(!event.target.closest('a'))location.href=this.dataset.href"
       >
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;margin-bottom:0.5rem">
-          <div>
-            <div style="font-weight:600;color:var(--sl-color-white)">{isZh ? c.name_zh : c.name}</div>
-            <div style="font-size:0.8rem;color:var(--sl-color-gray-3)">{isZh ? c.vendor_zh : c.vendor}</div>
+          <div style="min-width:0;flex:1">
+            <div style="font-weight:600;color:var(--sl-color-white);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{isZh ? c.name_zh : c.name}</div>
+            <div style="font-size:0.8rem;color:var(--sl-color-gray-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{isZh ? c.vendor_zh : c.vendor}</div>
           </div>
-          <span style={`font-size:0.75rem;font-weight:600;color:${dotColor(c.channels.wechat_clawbot)};white-space:nowrap`}>
+          <span style={`font-size:0.75rem;font-weight:600;color:${dotColor(c.channels.wechat_clawbot)};white-space:nowrap;flex-shrink:0`}>
             WeChat {dot(c.channels.wechat_clawbot)}
           </span>
         </div>
@@ -91,14 +91,18 @@ const categoryColors = {
 
 <style>
   .flt {
-    padding: 0.35rem 0.85rem;
     border-radius: 0.5rem;
     border: 1px solid var(--sl-color-hairline);
     background: transparent;
     color: var(--sl-color-gray-3);
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    padding: 0 0.85rem;
+    box-sizing: border-box;
     font-size: 0.82rem;
-    line-height: 1.5;
+    line-height: 1;
     transition: all .15s;
   }
   .flt.active, .flt:hover {
