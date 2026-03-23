@@ -1,29 +1,19 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
-
-export function getStaticPaths() {
-  return [{ params: { lang: 'en' } }]
-}
-
-const { lang } = Astro.params
-const isZh = lang === 'zh'
 ---
 
 <StarlightPage frontmatter={{
-  title: isZh ? '投稿 / 编辑' : 'Submit / Edit',
-  description: isZh ? '投稿缺失的 Claw 或修正现有信息' : 'Submit a missing Claw or correct existing info',
+  title: '投稿 / 编辑',
+  description: '投稿缺失的 Claw 或修正现有信息',
 }}>
-  <p>{isZh
-    ? '发现有遗漏的 Claw 或信息有误？有两种方式贡献：'
-    : 'Know a Claw that\'s missing or outdated? Two ways to contribute:'
-  }</p>
+  <p>发现有遗漏的 Claw 或信息有误？有两种方式贡献：</p>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.5rem 0">
     <a href="/admin/" style="border:1px solid var(--sl-color-accent);border-radius:0.75rem;padding:1.5rem;text-decoration:none;display:block">
       <div style="font-size:1.5rem;margin-bottom:0.75rem">✏️</div>
-      <div style="font-weight:600;color:var(--sl-color-white);margin-bottom:0.5rem">{isZh ? '可视化 CMS' : 'Visual CMS'}</div>
+      <div style="font-weight:600;color:var(--sl-color-white);margin-bottom:0.5rem">可视化 CMS</div>
       <p style="font-size:0.85rem;color:var(--sl-color-gray-3);margin:0">
-        {isZh ? '填表投稿，无需懂 Git，GitHub 账号登录即可。' : 'Fill a form. No Git knowledge needed. Login with GitHub.'}
+        填表投稿，无需懂 Git，GitHub 账号登录即可。
       </p>
     </a>
 
@@ -35,12 +25,12 @@ const isZh = lang === 'zh'
       <div style="font-size:1.5rem;margin-bottom:0.75rem">🔧</div>
       <div style="font-weight:600;color:var(--sl-color-white);margin-bottom:0.5rem">GitHub PR</div>
       <p style="font-size:0.85rem;color:var(--sl-color-gray-3);margin:0">
-        {isZh ? '直接在 GitHub 创建或编辑 YAML 文件，提交 PR。' : 'Add or edit YAML files directly on GitHub and open a PR.'}
+        直接在 GitHub 创建或编辑 YAML 文件，提交 PR。
       </p>
     </a>
   </div>
 
-  <h2>{isZh ? 'YAML 模板' : 'YAML Template'}</h2>
+  <h2>YAML 模板</h2>
   <pre style="background:var(--sl-color-bg-nav);border:1px solid var(--sl-color-hairline);border-radius:0.5rem;padding:1rem;font-size:0.78rem;overflow-x:auto"><code>{`name: YourClaw
 name_zh: 你的产品名
 vendor: Company Name

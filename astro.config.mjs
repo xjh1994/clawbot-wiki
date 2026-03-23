@@ -8,10 +8,10 @@ export default defineConfig({
       title: 'ClawBot Wiki',
       description: 'OpenClaw ecosystem compatibility tracker',
       logo: { src: './public/favicon.svg' },
-      defaultLocale: 'zh',
+      defaultLocale: 'root',
       locales: {
+        root: { label: '中文', lang: 'zh-CN' },
         en: { label: 'English' },
-        zh: { label: '中文', lang: 'zh-CN' },
       },
       customCss: ['./src/styles/custom.css'],
       social: [
@@ -22,8 +22,8 @@ export default defineConfig({
           label: 'Overview',
           translations: { 'zh-CN': '概览' },
           items: [
-            { label: 'All Claws', translations: { 'zh-CN': '全部 Claw' }, link: '/zh/claws/' },
-            { label: 'Submit / Edit', translations: { 'zh-CN': '投稿 / 编辑' }, link: '/zh/submit/' },
+            { label: 'All Claws', translations: { 'zh-CN': '全部 Claw' }, link: '/claws/' },
+            { label: 'Submit / Edit', translations: { 'zh-CN': '投稿 / 编辑' }, link: '/submit/' },
           ],
         },
         {
