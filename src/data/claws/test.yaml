@@ -1,0 +1,32 @@
+name: test
+name_zh: 
+vendor: test
+vendor_zh: 
+category: desktop
+
+openclaw:
+  fork_type: unknown
+  protocol_compat: unknown
+  soul_md: null
+  mcp_support: null
+  skills_store: null
+  openclaw_lag_days: null
+
+channels:
+  wechat_clawbot: "yes"
+  qq: "unknown"
+  wecom: "unknown"
+  feishu: "unknown"
+  dingtalk: "unknown"
+  telegram: "unknown"
+  discord: "unknown"
+
+models:
+  default: null
+  supported: []
+  local_model: null
+
+deployment: local
+tags: []
+verified: false
+last_updated: "2026-03-23"
