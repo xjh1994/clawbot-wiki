@@ -2,6 +2,7 @@ name: Lexiang Knowledge Base (Lobster Edition)
 name_zh: 腾讯乐享知识库·龙虾版
 vendor: Tencent
 vendor_zh: 腾讯
+website: https://lexiang.tencent.com/product-version
 release_date: "2026-03"
 category: enterprise
 description: Tencent Lexiang's enterprise knowledge management platform with OpenClaw integration. Part of Tencent's full "lobster product matrix" — connects OpenClaw agents to corporate knowledge bases via WeCom.

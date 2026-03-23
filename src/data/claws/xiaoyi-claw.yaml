@@ -2,6 +2,7 @@ name: Xiaoyi Claw
 name_zh: 华为小艺 Claw
 vendor: Huawei
 vendor_zh: 华为
+website: https://consumer.huawei.com/cn/support/content/zh-cn16087757/
 release_date: "2026-03-11"
 category: other
 description: Huawei's Celia (小艺) AI assistant with OpenClaw mode — HarmonyOS-native 7×24 personal agent. Connect your OpenClaw instance via the Xiaoyi Open Platform for persistent AI assistance on Kirin devices.

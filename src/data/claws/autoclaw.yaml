@@ -2,6 +2,7 @@ name: AutoClaw
 name_zh: AutoClaw（澳龙）
 vendor: Zhipu AI
 vendor_zh: 智谱 AI
+website: https://autoclaws.org
 release_date: "2026-03-10"
 category: desktop
 description: Zhipu AI's one-click desktop OpenClaw (nickname "澳龙"). Ships with 50+ pre-built skills, proprietary Pony-Alpha-2 model optimized for tool-calling, and AutoGLM browser automation. Feishu one-click integration.

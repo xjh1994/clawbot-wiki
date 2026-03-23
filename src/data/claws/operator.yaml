@@ -2,6 +2,7 @@ name: Operator (Red Finger)
 name_zh: 百度红手指 Operator
 vendor: Baidu
 vendor_zh: 百度
+website: https://hsz.baidu.com/operator/
 release_date: "2026-03-12"
 category: other
 description: Baidu's "Red Finger" — world's first mobile AI agent. Built on Baidu's ARM cloud infrastructure and VLA (vision-language-action) multimodal model. Supports cross-app operations like ride-hailing and food ordering directly from a phone.

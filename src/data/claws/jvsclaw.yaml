@@ -2,6 +2,7 @@ name: JVSClaw
 name_zh: JVS Claw（阿里云手机版龙虾）
 vendor: Alibaba Cloud
 vendor_zh: 阿里云
+website: https://jvs.wuying.aliyun.com
 release_date: "2026-03-13"
 category: cloud
 description: Alibaba Cloud's mobile-first OpenClaw SaaS — 3-minute setup, no server or API key required. Available on iOS, Android, iPad, and web. Features a self-evolving "universal skill" that auto-creates missing capabilities on demand.

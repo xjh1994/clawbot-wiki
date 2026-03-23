@@ -2,7 +2,8 @@ name: AstronClaw
 name_zh: AstronClaw（讯飞星辰）
 vendor: iFlytek
 vendor_zh: 科大讯飞
-release_date: "2026-03"
+website: https://agent.xfyun.cn/astron-claw
+release_date: "2026-03-12"
 category: enterprise
 description: iFlytek's enterprise OpenClaw with sandbox security, cloud one-click deployment, and a self-hosted SkillHub registry for managing private enterprise skills. Integrates with WeCom and DingTalk. Speech recognition strength from Spark LLM.
 description_zh: 讯飞企业版 OpenClaw，沙箱安全隔离，云端一键部署，支持私有 SkillHub 注册中心管理企业内部技能，集成企业微信/钉钉，星火大模型语音识别优势加持。

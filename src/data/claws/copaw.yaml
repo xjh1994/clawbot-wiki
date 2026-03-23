@@ -2,6 +2,7 @@ name: CoPaw
 name_zh: CoPaw
 vendor: Alibaba Cloud (Tongyi Lab)
 vendor_zh: 阿里云通义实验室
+website: https://github.com/agentscope-ai/CoPaw
 github: https://github.com/agentscope-ai/CoPaw
 release_date: "2026-02-28"
 category: desktop

@@ -2,6 +2,7 @@ name: PicoClaw (Sipeed)
 name_zh: 矽速 PicoClaw（Sipeed）
 vendor: Sipeed
 vendor_zh: 矽速科技（Sipeed）
+website: https://github.com/sipeed/picoclaw
 github: https://github.com/sipeed/picoclaw
 release_date: "2026-02-09"
 category: open-source

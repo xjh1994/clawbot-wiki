@@ -1,35 +1,38 @@
 name: SenseClaw
-name_zh: SenseClaw
+name_zh: 商汤办公浣熊 × OpenClaw
 vendor: SenseTime
 vendor_zh: 商汤科技
-release_date: "2026-03"
+website: https://raccoon.sensetime.com/
+release_date: "2026-03-12"
 category: enterprise
-description: SenseTime's OpenClaw implementation leveraging their computer vision and multimodal AI capabilities.
-description_zh: 商汤科技的 OpenClaw 实现，基于其计算机视觉和多模态 AI 能力。
+description: SenseTime's "Office Raccoon" (办公浣熊) integrated with OpenClaw — packaged as "Raccoon Skills" covering Excel processing, data analysis, and automated report generation. Also available as AI Box hardware (with Qujing Tech) for fully on-premise deployment.
+description_zh: 商汤"办公小浣熊"与 OpenClaw 的集成方案。核心功能以"浣熊技能包"形式上架 OpenClaw 技能市场，覆盖 Excel 处理/数据分析/报告生成；同时与曲境科技联合推出 AI Box 一体机，实现本地化安全办公部署。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
+  fork_type: compatible
+  protocol_compat: partial
   soul_md: null
-  mcp_support: null
-  skills_store: null
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
   wecom: "unknown"
   feishu: "unknown"
   dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  telegram: "no"
+  discord: "no"
 
 models:
   default: SenseNova
-  supported: [SenseNova]
-  local_model: null
+  supported: [SenseNova, DeepSeek]
+  local_model: true
 
-deployment: cloud
-tags: [sensetime, vision, multimodal, enterprise]
-verified: false
+deployment: both
+tags: [sensetime, office, excel, skills-pack, ai-box]
+verified: true
+notes: Not a standalone OpenClaw fork — it's SenseTime's Office Raccoon AI assistant providing skill packs for the OpenClaw ecosystem. AI Box (with Qujing Tech) bundles OpenClaw + Raccoon for on-premise deployment.
+notes_zh: 并非独立 OpenClaw 产品，而是商汤办公浣熊以"浣熊技能包"形式接入 OpenClaw 生态。AI Box 硬件一体机（联合曲境科技）可本地化私有部署。
 last_updated: "2026-03-23"

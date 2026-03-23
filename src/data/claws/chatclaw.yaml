@@ -2,7 +2,8 @@ name: ChatClaw
 name_zh: ChatClaw
 vendor: Zhima AI
 vendor_zh: 智麻
-github: https://gitee.com/zhimaAi/ChatClaw
+website: https://gitee.com/zhimaAi/ChatClaw
+github: https://github.com/zhimaAi/ChatClaw
 release_date: "2026-03"
 category: open-source
 description: Zhima AI's Go-based OpenClaw alternative — 5-minute setup, 30MB installer, runs on macOS and Windows. Connects to WhatsApp, Telegram, Slack, Discord, Gmail, DingTalk, WeCom, QQ, and Feishu. Built-in skill market, local knowledge base, memory, MCP, and scheduled tasks.

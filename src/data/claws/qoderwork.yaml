@@ -2,7 +2,8 @@ name: QoderWork
 name_zh: QoderWork
 vendor: Alibaba Cloud
 vendor_zh: 阿里云
-release_date: "2026-01"
+website: https://qoder.com/qoderwork
+release_date: "2026-01-30"
 category: cloud
 description: Alibaba Cloud's out-of-the-box OpenClaw workspace — one of the earliest Chinese OpenClaw SaaS products (January 2026). Supports PPT generation, web content summarization, teaching demo videos, and custom Skills via DingTalk.
 description_zh: 阿里云开箱即用 OpenClaw 工作空间，国内最早上线的云端龙虾产品之一（2026 年 1 月）。支持 PPT 生成、网页内容摘要、教学演示视频，通过钉钉接入自定义 Skills。

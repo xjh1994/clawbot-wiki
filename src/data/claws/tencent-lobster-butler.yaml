@@ -2,6 +2,7 @@ name: Tencent Lobster Butler
 name_zh: 腾讯龙虾管家（电脑管家 AI 沙箱）
 vendor: Tencent
 vendor_zh: 腾讯
+website: https://guanjia.qq.com/
 release_date: "2026-03-13"
 category: other
 description: AI security sandbox in Tencent PC Manager 18.0 — not a standalone OpenClaw implementation but a protection layer for all locally-running AI agents (OpenClaw, QClaw, OneClaw, LobsterAI). Controls system access, intercepts abnormal payments, prevents private file access, and supports custom sensitive path blacklists.

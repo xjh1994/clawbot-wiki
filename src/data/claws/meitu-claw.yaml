@@ -1,37 +1,38 @@
-name: Meitu Claw
-name_zh: 美图 Claw
-vendor: Meitu
-vendor_zh: 美图
+name: Ima Claw
+name_zh: 美图 Ima Claw
+vendor: Meitu (Ima Studio)
+vendor_zh: 美图（Ima Studio）
+website: https://www.imastudio.com/ima-claw
 release_date: "2026-03"
-category: desktop
-description: Meitu's OpenClaw implementation. Likely branded as "Ima Claw" — a creative studio agent for images, videos, and music workflows built on OpenClaw with Ima Studio's creative skills.
-description_zh: 美图的 OpenClaw 实现，疑似以"Ima Claw"品牌发布，面向图像/视频/音乐创作场景的智能创意工作室 Agent。
+category: cloud
+description: Meitu's Ima Studio AI creative agent built on OpenClaw — cloud-hosted, 24/7 online. Multimodal creative workflows covering images, videos, audio, and text. Built-in creative skills (image generation, video clips, poster design, product photos). No API key or local setup needed.
+description_zh: 美图 Ima Studio 基于 OpenClaw 构建的云端创意 AI Agent，无需本地安装和 API Key，全天候在线。多模态创作工作流（图像/视频/音频/文案），内置丰富创意技能包（图片生成/视频剪辑/海报设计/商品图）。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
+  fork_type: compatible
+  protocol_compat: full
   soul_md: null
-  mcp_support: null
-  skills_store: null
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
   telegram: "unknown"
   discord: "unknown"
 
 models:
   default: null
-  supported: []
-  local_model: null
+  supported: [OpenAI-compatible]
+  local_model: false
 
-deployment: local
-tags: [meitu, image, creative, ima]
-verified: false
-notes: Possible brand name "Ima Claw" (Ima Studio + OpenClaw). Details sparse — needs verification.
-notes_zh: 疑似品牌名"Ima Claw"（Ima Studio × OpenClaw），信息稀缺，待核实。
+deployment: cloud
+tags: [meitu, ima-studio, creative, cloud, multimodal, image, video]
+verified: true
+notes: "Ima Claw" is Meitu's Ima Studio brand product. Cloud-hosted OpenClaw instance with creative skill packs. Bundled plan includes LLM tokens + image/video/audio generation credits. Skills store at imastudio.com/ima-claw/skills.
+notes_zh: 美图旗下 Ima Studio 品牌产品，云端托管 OpenClaw 实例，附带创意技能包。订阅套餐含 LLM tokens + 图像/视频/音频生成点数，技能市场详见 imastudio.com/ima-claw/skills。
 last_updated: "2026-03-23"

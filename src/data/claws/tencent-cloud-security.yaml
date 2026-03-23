@@ -2,6 +2,7 @@ name: Tencent Cloud ADP Claw
 name_zh: 腾讯云 ADP Claw（云保安）
 vendor: Tencent Cloud
 vendor_zh: 腾讯云
+website: https://cloud.tencent.com/act/pro/openclaw-in-adp
 release_date: "2026-03"
 category: enterprise
 description: Tencent Cloud's enterprise-grade OpenClaw deployment platform with 5-layer security safeguards — data isolation, access controls, compliance templates, and industry-tested workflow templates. Targets organizations that can't deploy raw OpenClaw due to security concerns.

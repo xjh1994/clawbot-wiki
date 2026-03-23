@@ -2,6 +2,8 @@ name: LobsterAI
 name_zh: LobsterAI（有道龙虾）
 vendor: NetEase Youdao
 vendor_zh: 网易有道
+website: https://lobsterai.youdao.com
+github: https://github.com/netease-youdao/LobsterAI
 release_date: "2026-02-11"
 category: open-source
 description: NetEase Youdao's open-source desktop AI agent (open-sourced Feb 19, 2026). 7×24 autonomous operation, local SQLite storage, sandbox isolation for sensitive ops, DingTalk/Feishu remote control, Skill Store + full MCP support added March 6.
