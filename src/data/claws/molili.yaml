@@ -2,36 +2,37 @@ name: Molili
 name_zh: Molili
 vendor: Dangbei
 vendor_zh: 当贝
-release_date: "2026-03"
-category: other
-description: Dangbei's AI agent — notably does not use "Claw" in its name, suggesting a more independent brand direction.
-description_zh: 当贝 AI Agent，品牌完全不带"Claw"，命名独立，当贝主要做投影仪。
+website: https://molili.com
+release_date: "2026-01"
+category: desktop
+description: China's first localized OpenClaw, launched by Dangbei in January 2026. Features one-click install, 8000+ skills, WeChat/DingTalk/Feishu/Siri integration, and subscription pricing that avoids token cost spikes.
+description_zh: 国内首个中文版 OpenClaw，当贝 2026 年 1 月发布。一键安装、8000+ 技能、全面打通微信/钉钉/飞书/Siri，订阅制定价避免 Token 费用暴涨。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
+  wechat_clawbot: "yes"
   qq: "unknown"
   wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
+  feishu: "yes"
+  dingtalk: "yes"
   telegram: "unknown"
   discord: "unknown"
 
 models:
-  default: null
-  supported: []
-  local_model: null
+  default: DeepSeek
+  supported: [DeepSeek, MiniMax, Qwen, Kimi, GLM]
+  local_model: false
 
-deployment: other
-tags: [dangbei, projector, smart-home]
-verified: false
-notes: Dangbei is primarily a projector company — smart home / living room scenario likely.
-notes_zh: 当贝主业为投影仪，Molili 可能面向客厅/智能家居场景。
+deployment: local
+tags: [dangbei, first-chinese-localization, skills-store]
+verified: true
+notes: Historically significant as the first Chinese-localized OpenClaw, predating all major tech giants. Dangbei is primarily a projector company — illustrates how widely OpenClaw spread.
+notes_zh: 历史意义重大：国内首个中文本地化版本，早于所有大厂发布。当贝主业投影仪，体现了 OpenClaw 的广泛渗透力。
 last_updated: "2026-03-23"

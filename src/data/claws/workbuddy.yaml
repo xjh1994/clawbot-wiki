@@ -2,6 +2,7 @@ name: WorkBuddy
 name_zh: WorkBuddy
 vendor: Tencent
 vendor_zh: 腾讯
+website: https://workbuddycn.com
 release_date: "2026-03-09"
 category: enterprise
 description: Tencent's enterprise-grade OpenClaw desktop workspace. Zero-deployment, supports 20+ skill packages, MCP, and multi-model switching.

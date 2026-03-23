@@ -2,6 +2,7 @@ name: ZeroClaw
 name_zh: ZeroClaw
 vendor: Open Source
 vendor_zh: 开源社区
+website: https://zeroclawlabs.ai
 github: https://github.com/zeroclaw-labs/zeroclaw
 release_date: "2026-02"
 category: open-source

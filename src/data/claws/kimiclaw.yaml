@@ -2,7 +2,8 @@ name: Kimi Claw
 name_zh: Kimi Claw
 vendor: Moonshot AI
 vendor_zh: 月之暗面
-release_date: "2026-03"
+website: https://www.kimi.com/bot
+release_date: "2026-02-16"
 category: cloud
 description: Moonshot AI's cloud-hosted OpenClaw. Pre-configured with Kimi K2.5, web search, and 40GB cloud storage. No setup required.
 description_zh: 月之暗面云端 Agent，默认 Kimi K2.5 模型，内置联网搜索与 40GB 云存储，开箱即用。

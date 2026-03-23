@@ -2,10 +2,10 @@ name: Xiaoyi Claw
 name_zh: 华为小艺 Claw
 vendor: Huawei
 vendor_zh: 华为
-release_date: "2026-03"
+release_date: "2026-03-11"
 category: other
-description: Huawei's Celia (小艺) AI assistant with OpenClaw integration, deeply embedded in HarmonyOS ecosystem.
-description_zh: 华为小艺 AI 助手的 OpenClaw 集成版本，深度嵌入鸿蒙 HarmonyOS 生态。
+description: Huawei's Celia (小艺) AI assistant with OpenClaw mode — HarmonyOS-native 7×24 personal agent. Connect your OpenClaw instance via the Xiaoyi Open Platform for persistent AI assistance on Kirin devices.
+description_zh: 华为小艺 OpenClaw 模式，鸿蒙原生 7×24 个人智能体。通过小艺开放平台连接用户自己的 OpenClaw，在麒麟设备上实现持久 AI 助理。
 
 openclaw:
   fork_type: compatible
@@ -16,22 +16,22 @@ openclaw:
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "no"
+  discord: "no"
 
 models:
   default: Pangu
-  supported: [Pangu]
+  supported: [Pangu, DeepSeek]
   local_model: true
 
 deployment: local
-tags: [huawei, harmonyos, celia, on-device]
-verified: false
-notes: Likely on-device inference on Kirin chips. HarmonyOS ecosystem only.
-notes_zh: 可能基于麒麟芯片端侧推理，鸿蒙生态专属。
+tags: [huawei, harmonyos, celia, on-device, kirin]
+verified: true
+notes: OpenClaw mode added to Xiaoyi Open Platform (not a standalone product). On-device inference on Kirin chips. HarmonyOS ecosystem only. Huawei CMO He Gang personally demoed it.
+notes_zh: 小艺开放平台新增 OpenClaw 接入模式（非独立产品），麒麟芯片端侧推理，鸿蒙生态专属。华为何刚亲测后公开称"很惊喜"。
 last_updated: "2026-03-23"

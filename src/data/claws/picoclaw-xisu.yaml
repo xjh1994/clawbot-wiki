@@ -1,37 +1,38 @@
-name: PicoClaw (Xisu)
-name_zh: 矽速 PicoClaw
-vendor: Xisu Technology
-vendor_zh: 矽速科技
-release_date: "2026-03"
-category: embedded
-description: Xisu's PicoClaw — a lightweight edge AI agent. Not related to the open-source PicoClaw (Go rewrite).
-description_zh: 矽速科技的轻量边缘 AI Agent，与开源社区的 PicoClaw（Go 版本）同名但无关联。
+name: PicoClaw (Sipeed)
+name_zh: 矽速 PicoClaw（Sipeed）
+vendor: Sipeed
+vendor_zh: 矽速科技（Sipeed）
+github: https://github.com/sipeed/picoclaw
+release_date: "2026-02-09"
+category: open-source
+description: Sipeed's Go-based ultra-lightweight AI agent — runs on $10 RISC-V hardware with <10MB RAM. Single binary under 10MB, 100× lighter than OpenClaw. Built in 1 day with ~95% AI-written code. Targets embedded boards, old smartphones, IP cameras, and routers.
+description_zh: 矽速科技 Go 语言开源 AI Agent，<10MB 内存、10 美元 RISC-V 硬件即可运行。单二进制不足 10MB，比 OpenClaw 轻 100 倍，约 95% 代码由 AI 编写，1 天构建完成。面向嵌入式开发板/旧手机/摄像头/路由器。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: independent
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "yes"
+  discord: "yes"
 
 models:
   default: null
-  supported: []
+  supported: [DeepSeek, Ollama, OpenAI-compatible]
   local_model: true
 
 deployment: local
-tags: [xisu, edge, embedded]
-verified: false
-notes: "Name collision: open-source PicoClaw is a Go rewrite of OpenClaw, unrelated to this product."
-notes_zh: 注意命名冲突：开源 PicoClaw 是 Go 语言重写版，与此产品无关。
+tags: [sipeed, go, open-source, embedded, risc-v, lightweight]
+verified: true
+notes: Sipeed (矽速科技) is the maker of low-cost RISC-V/ARM dev boards. PicoClaw is their own project — the same as the well-known open-source Go-based picoclaw. No name collision.
+notes_zh: 矽速科技（Sipeed）是低成本 RISC-V/ARM 开发板厂商，PicoClaw 是其自研项目，即广为人知的 Go 语言开源版 picoclaw，并无命名冲突。
 last_updated: "2026-03-23"

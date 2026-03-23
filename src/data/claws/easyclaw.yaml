@@ -2,10 +2,11 @@ name: EasyClaw
 name_zh: EasyClaw
 vendor: Cheetah Mobile
 vendor_zh: 猎豹移动
+website: https://easyclaw.com
 release_date: "2026-03"
 category: desktop
-description: Cheetah Mobile's OpenClaw implementation focused on building a rich skill store ecosystem.
-description_zh: 猎豹移动的 OpenClaw 实现，核心亮点是技能商店生态。
+description: Cheetah Mobile's OpenClaw implementation in two editions — personal (easyclaw.com) and enterprise (easyclaw.work). Zero configuration, no API key required, one-click install. 24/7 AI agent for individuals and teams.
+description_zh: 猎豹移动 OpenClaw 封装，个人版（easyclaw.com）和企业版（easyclaw.work）双版本，零配置免 API Key，一键安装，24/7 AI 助手。
 
 openclaw:
   fork_type: fork
@@ -26,10 +27,12 @@ channels:
 
 models:
   default: null
-  supported: []
-  local_model: null
+  supported: [DeepSeek, OpenAI-compatible]
+  local_model: false
 
 deployment: local
-tags: [cheetah, skills-store]
-verified: false
+tags: [cheetah, skills-store, zero-config]
+verified: true
+notes: CEO Fu Sheng personally demoed it live — the demo went viral ("骨折傅盛直播翻车，龙虾3分钟救场"). Two distinct products: personal and enterprise editions.
+notes_zh: CEO 傅盛直播演示时意外走红（"骨折傅盛直播翻车，龙虾 3 分钟救场"）。个人版和企业版两套独立产品线。
 last_updated: "2026-03-23"

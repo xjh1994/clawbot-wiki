@@ -1,11 +1,12 @@
 name: DuClaw
 name_zh: DuClaw
-vendor: Baidu
-vendor_zh: 百度
-release_date: "2026-03"
-category: desktop
-description: Baidu's multi-platform OpenClaw series spanning desktop, cloud, mobile, and smart home.
-description_zh: 百度全平台 OpenClaw 系列，覆盖桌面、云端、移动和智能家居。
+vendor: Baidu AI Cloud
+vendor_zh: 百度智能云
+website: https://cloud.baidu.com/product/duclaw.html
+release_date: "2026-03-11"
+category: cloud
+description: Baidu's zero-deployment cloud OpenClaw service. Web-based, no server/API config needed. Built-in Baidu Search, Baidu Baike, and Baidu Scholar. Supports DeepSeek, Kimi, GLM, MiniMax switching. Introductory price ¥17.8/month.
+description_zh: 百度零部署云端 OpenClaw 服务，浏览器直接使用，无需配置服务器和 API Key。内置百度搜索/百科/学术，支持 DeepSeek/Kimi/GLM/MiniMax 切换，首月 17.8 元。
 
 openclaw:
   fork_type: fork
@@ -13,7 +14,7 @@ openclaw:
   soul_md: true
   mcp_support: true
   skills_store: true
-  openclaw_lag_days: 10
+  openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "no"
@@ -26,10 +27,12 @@ channels:
 
 models:
   default: ERNIE
-  supported: [ERNIE, DeepSeek, Qianfan]
-  local_model: true
+  supported: [ERNIE, DeepSeek, Kimi, GLM, MiniMax]
+  local_model: false
 
-deployment: both
-tags: [baidu, ernie, multi-platform]
+deployment: cloud
+tags: [baidu, ernie, cloud, zero-deployment]
 verified: true
+notes: DuClaw = Baidu's cloud SaaS. Separate from Operator (Baidu's mobile agent). Bundled with Qianfan Coding Plan.
+notes_zh: DuClaw 是百度云端 SaaS 版；百度移动端产品是红手指 Operator，两者独立。随千帆 Coding Plan 捆绑销售。
 last_updated: "2026-03-23"

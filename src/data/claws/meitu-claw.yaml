@@ -4,8 +4,8 @@ vendor: Meitu
 vendor_zh: 美图
 release_date: "2026-03"
 category: desktop
-description: Meitu's OpenClaw implementation. Expected to focus on creative and image editing workflows.
-description_zh: 美图的 OpenClaw 实现，预期聚焦创意和图像编辑工作流。
+description: Meitu's OpenClaw implementation. Likely branded as "Ima Claw" — a creative studio agent for images, videos, and music workflows built on OpenClaw with Ima Studio's creative skills.
+description_zh: 美图的 OpenClaw 实现，疑似以"Ima Claw"品牌发布，面向图像/视频/音乐创作场景的智能创意工作室 Agent。
 
 openclaw:
   fork_type: unknown
@@ -30,6 +30,8 @@ models:
   local_model: null
 
 deployment: local
-tags: [meitu, image, creative]
+tags: [meitu, image, creative, ima]
 verified: false
+notes: Possible brand name "Ima Claw" (Ima Studio + OpenClaw). Details sparse — needs verification.
+notes_zh: 疑似品牌名"Ima Claw"（Ima Studio × OpenClaw），信息稀缺，待核实。
 last_updated: "2026-03-23"

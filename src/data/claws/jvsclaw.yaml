@@ -1,35 +1,37 @@
 name: JVSClaw
-name_zh: JVSClaw
+name_zh: JVS Claw（阿里云手机版龙虾）
 vendor: Alibaba Cloud
 vendor_zh: 阿里云
-release_date: "2026-03"
+release_date: "2026-03-13"
 category: cloud
-description: Alibaba Cloud's JVS-based Claw agent. Details TBD.
-description_zh: 阿里云 JVS 系列 Claw Agent，具体功能待补充。
+description: Alibaba Cloud's mobile-first OpenClaw SaaS — 3-minute setup, no server or API key required. Available on iOS, Android, iPad, and web. Features a self-evolving "universal skill" that auto-creates missing capabilities on demand.
+description_zh: 阿里云手机端云版龙虾，3 分钟养虾自由，无需配置服务器和模型 API。iOS/Android/iPad/Web 全平台，自带「万能技能」可按需自动生成所需 Skill。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
+  wechat_clawbot: "no"
   qq: "unknown"
   wecom: "unknown"
   feishu: "unknown"
-  dingtalk: "unknown"
+  dingtalk: "yes"
   telegram: "unknown"
   discord: "unknown"
 
 models:
   default: Qwen
-  supported: [Qwen]
-  local_model: null
+  supported: [Qwen, DeepSeek, OpenAI-compatible]
+  local_model: false
 
 deployment: cloud
-tags: [alibaba, cloud]
-verified: false
+tags: [alibaba, mobile, cloud, ios, android, bailian]
+verified: true
+notes: Complementary to CoPaw (local) — JVSClaw targets mobile/no-config users, CoPaw targets developers who want full control. Both are Alibaba products.
+notes_zh: 与 CoPaw（本地）互补定位：JVSClaw 面向手机端/零配置用户，CoPaw 面向需要完全控制的开发者。均为阿里系产品。
 last_updated: "2026-03-23"

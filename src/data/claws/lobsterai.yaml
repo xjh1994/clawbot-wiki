@@ -1,35 +1,37 @@
 name: LobsterAI
-name_zh: LobsterAI
+name_zh: LobsterAI（有道龙虾）
 vendor: NetEase Youdao
 vendor_zh: 网易有道
-release_date: "2026-03"
-category: desktop
-description: NetEase Youdao's OpenClaw-based agent. Notable for using "Lobster" instead of "Claw" in branding.
-description_zh: 网易有道的 OpenClaw Agent，品牌用"Lobster"而非"Claw"命名，有道教育基因明显。
+release_date: "2026-02-11"
+category: open-source
+description: NetEase Youdao's open-source desktop AI agent (open-sourced Feb 19, 2026). 7×24 autonomous operation, local SQLite storage, sandbox isolation for sensitive ops, DingTalk/Feishu remote control, Skill Store + full MCP support added March 6.
+description_zh: 网易有道开源桌面 Agent（2026-02-19 开源）。7×24 自主运行，本地 SQLite 存储，敏感操作沙箱隔离，钉钉/飞书远程下发指令，3 月 6 日上线技能商店和完整 MCP 支持。
 
 openclaw:
-  fork_type: fork
+  fork_type: independent
   protocol_compat: full
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "unknown"
   qq: "unknown"
   wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
+  feishu: "yes"
+  dingtalk: "yes"
   telegram: "unknown"
   discord: "unknown"
 
 models:
-  default: null
-  supported: [DeepSeek]
-  local_model: null
+  default: DeepSeek
+  supported: [DeepSeek, Kimi, GLM, MiniMax, OpenAI-compatible]
+  local_model: false
 
-deployment: both
-tags: [netease, youdao, education]
-verified: false
+deployment: local
+tags: [netease, youdao, open-source, sandbox]
+verified: true
+notes: All data stored locally in SQLite, never leaves the device. Sensitive operations run in isolated Linux VMs. First month access count ranked top 5 among all Chinese OpenClaw-like agents.
+notes_zh: 所有数据本地 SQLite 存储，敏感操作在隔离 Linux 虚拟机中运行。上线首月访问量跻身国产同类 Agent Top 5。
 last_updated: "2026-03-23"

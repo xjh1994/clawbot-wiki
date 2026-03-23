@@ -1,35 +1,38 @@
 name: CoPaw
 name_zh: CoPaw
-vendor: Alibaba Cloud
-vendor_zh: 阿里云
-release_date: "2026-03"
-category: cloud
-description: Alibaba Cloud's OpenClaw implementation. Notable for using "Paw" instead of "Claw" in its branding.
-description_zh: 阿里云 OpenClaw 实现，品牌上以"Paw"区别于"Claw"命名体系。
+vendor: Alibaba Cloud (Tongyi Lab)
+vendor_zh: 阿里云通义实验室
+github: https://github.com/agentscope-ai/CoPaw
+release_date: "2026-02-28"
+category: desktop
+description: Alibaba Cloud's open-source personal AI agent workstation (Apache 2.0). Supports local or cloud deployment with 3-command install, long-term memory via ReMe/PROFILE.md, and channels including DingTalk, Feishu, QQ, Discord, and iMessage.
+description_zh: 阿里云通义实验室开源的个人 AI 工作站（Apache 2.0）。3 条命令本地安装，ReMe 长期记忆系统，支持钉钉/飞书/QQ/Discord/iMessage 多渠道接入，可端可云。
 
 openclaw:
-  fork_type: fork
+  fork_type: independent
   protocol_compat: full
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "no"
-  qq: "no"
+  qq: "yes"
   wecom: "unknown"
-  feishu: "unknown"
+  feishu: "yes"
   dingtalk: "yes"
   telegram: "unknown"
-  discord: "unknown"
+  discord: "yes"
 
 models:
   default: Qwen
-  supported: [Qwen, DeepSeek]
-  local_model: null
+  supported: [Qwen, DeepSeek, Claude, OpenAI-compatible]
+  local_model: true
 
-deployment: cloud
-tags: [alibaba, qwen, cloud]
-verified: false
+deployment: both
+tags: [alibaba, open-source, qwen, apache2]
+verified: true
+notes: Not a fork of OpenClaw — independently designed by Alibaba to be simpler and more "local + cloud" unified. Name means "Co Personal Agent Workstation" (协同个人智能体工作台).
+notes_zh: 并非 OpenClaw fork，是阿里自研更简易方案。名字含义：协同个人智能体工作台（Co Personal Agent Workstation）。
 last_updated: "2026-03-23"

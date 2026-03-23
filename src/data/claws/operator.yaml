@@ -2,13 +2,13 @@ name: Operator (Red Finger)
 name_zh: 百度红手指 Operator
 vendor: Baidu
 vendor_zh: 百度
-release_date: "2026-03"
-category: desktop
-description: Baidu's "Red Finger" Operator agent — a computer-use focused implementation in the OpenClaw ecosystem.
-description_zh: 百度红手指 Operator，专注计算机操控能力的 Agent 实现。
+release_date: "2026-03-12"
+category: other
+description: Baidu's "Red Finger" — world's first mobile AI agent. Built on Baidu's ARM cloud infrastructure and VLA (vision-language-action) multimodal model. Supports cross-app operations like ride-hailing and food ordering directly from a phone.
+description_zh: 百度红手指，全球首款手机端龙虾 App。基于百度 ARM 云服务和自研 VLA 多模态大模型，支持跨 App 操作打车/订外卖等，发布即秒光。
 
 openclaw:
-  fork_type: compatible
+  fork_type: independent
   protocol_compat: partial
   soul_md: null
   mcp_support: null
@@ -16,20 +16,22 @@ openclaw:
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "no"
+  discord: "no"
 
 models:
-  default: ERNIE
-  supported: [ERNIE, DeepSeek]
-  local_model: null
+  default: Baidu VLA
+  supported: [Baidu VLA, ERNIE]
+  local_model: false
 
-deployment: local
-tags: [baidu, operator, desktop]
-verified: false
+deployment: cloud
+tags: [baidu, mobile, vla, phone-agent]
+verified: true
+notes: Mobile-native agent using Baidu cloud phones for secure execution. OpenClaw creator Peter Steinberger praised the innovation and expressed willingness to co-develop. Launch caused capacity shortages.
+notes_zh: 基于百度云手机实现安全隔离执行，OpenClaw 作者公开称赞并表示愿意合作。发布即遭抢购，引发云服务扩容预警。
 last_updated: "2026-03-23"

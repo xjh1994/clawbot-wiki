@@ -2,10 +2,11 @@ name: ArkClaw
 name_zh: ArkClaw
 vendor: ByteDance / Volcano Engine
 vendor_zh: 字节跳动 / 火山引擎
-release_date: "2026-03"
+website: https://www.volcengine.com/product/arkclaw
+release_date: "2026-03-09"
 category: cloud
-description: ByteDance's cloud-native OpenClaw platform. No local install required — runs 24/7 in the cloud with Feishu deep integration.
-description_zh: 字节跳动云端 Agent，无需本地安装，24 小时云端运行，深度集成飞书。
+description: ByteDance's cloud-native OpenClaw SaaS — zero deployment, browser access, 24/7 operation. Deep Feishu integration for calendar, reminders, and complex doc/sheet processing. Supports Doubao-Seed-2.0, Kimi2.5, MiniMax2.5, and GLM. Early access via Volcano Ark Coding Plan.
+description_zh: 字节跳动云端 OpenClaw SaaS，无需部署，浏览器直接使用，24/7 运行。深度集成飞书日历/提醒/文档/表格。支持 Doubao-Seed-2.0/Kimi2.5/MiniMax2.5/GLM，火山方舟 Coding Plan 用户优先体验。
 
 openclaw:
   fork_type: fork
@@ -25,13 +26,13 @@ channels:
   discord: "unknown"
 
 models:
-  default: Doubao
-  supported: [Doubao, DeepSeek, GLM]
+  default: Doubao-Seed-2.0
+  supported: [Doubao-Seed-2.0, Kimi2.5, MiniMax2.5, GLM, DeepSeek]
   local_model: false
 
 deployment: cloud
-tags: [bytedance, feishu, cloud]
+tags: [bytedance, feishu, cloud, doubao]
 verified: true
-notes: Strong choice for Feishu-centric enterprise workflows. No WeChat support.
-notes_zh: 飞书用户的首选，不支持微信生态。
+notes: Best for Feishu-centric workflows. Coding Plan Pro users get immediate access; Lite users get 7-day free trial. No WeChat/WeCom/DingTalk support.
+notes_zh: 飞书工作流最佳选择。Coding Plan Pro 用户即刻可用，Lite 用户 7 天免费试用。不支持微信/企业微信/钉钉。
 last_updated: "2026-03-23"

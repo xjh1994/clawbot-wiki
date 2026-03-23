@@ -4,8 +4,8 @@ vendor: Kuaishou
 vendor_zh: 快手
 release_date: "2026-03"
 category: desktop
-description: Kuaishou's OpenClaw implementation. Expected to integrate with short-video content creation workflows.
-description_zh: 快手的 OpenClaw 实现，预期整合短视频内容创作工作流。
+description: Kuaishou's OpenClaw implementation. Details sparse — no public launch announcement found as of March 2026.
+description_zh: 快手的 OpenClaw 实现，截至 2026 年 3 月尚无公开发布公告，信息稀缺。
 
 openclaw:
   fork_type: unknown
@@ -32,4 +32,6 @@ models:
 deployment: both
 tags: [kuaishou, short-video, content]
 verified: false
+notes: Listed in various Chinese "OpenClaw product roundups" but no standalone product page or launch announcement confirmed.
+notes_zh: 出现在多篇国产龙虾产品盘点文章中，但截至 2026-03-23 尚未找到独立产品页面或官方发布公告。
 last_updated: "2026-03-23"

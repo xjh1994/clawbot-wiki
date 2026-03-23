@@ -1,35 +1,38 @@
 name: BocLaw
 name_zh: BocLaw
-vendor: Boyun
-vendor_zh: 博云
+vendor: Boyun Technology
+vendor_zh: 博云科技
+website: https://boclaw.ai
 release_date: "2026-03"
-category: cloud
-description: Boyun's cloud-native OpenClaw implementation focused on enterprise cloud operations.
-description_zh: 博云基于 OpenClaw 的云原生 Agent，面向企业云运维场景。
+category: desktop
+description: Boyun's cross-platform AI collaboration agent for enterprise workflows. One-click visual install on macOS/Windows/Linux/Web. All data stored locally (on-premises or private cloud). AI dialogue, skill extensions, IM remote control, and scheduled task execution.
+description_zh: 博云跨平台企业 AI 协作 Agent。可视化一键安装，支持 macOS/Windows/Linux/Web，数据本地存储（可私有化/离线），AI 对话、技能扩展、IM 远程控制、定时任务全覆盖。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: compatible
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "unknown"
   qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
+  wecom: "yes"
+  feishu: "yes"
+  dingtalk: "yes"
   telegram: "unknown"
   discord: "unknown"
 
 models:
   default: null
-  supported: []
-  local_model: null
+  supported: [DeepSeek, OpenAI-compatible, Ollama]
+  local_model: true
 
-deployment: cloud
-tags: [boyun, cloud, devops]
-verified: false
+deployment: both
+tags: [boyun, enterprise, cross-platform, on-premises]
+verified: true
+notes: Designed for enterprise data compliance — supports fully offline deployment. Web sandbox mode available for browser-based use.
+notes_zh: 面向企业数据合规场景，支持完全离线部署；同时提供 Web 沙盒模式用于浏览器访问。
 last_updated: "2026-03-23"

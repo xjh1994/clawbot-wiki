@@ -1,14 +1,14 @@
 name: MiClaw
-name_zh: MiClaw
+name_zh: 小米 MiClaw
 vendor: Xiaomi
 vendor_zh: 小米
-release_date: "2026-03"
+release_date: "2026-03-06"
 category: other
-description: Xiaomi's OpenClaw implementation. Expected to integrate with Xiaomi's IoT ecosystem and smart home devices.
-description_zh: 小米的 OpenClaw 实现，预期深度集成小米 IoT 生态和智能家居设备。
+description: Xiaomi's mobile-first AI agent — China's first mobile-native OpenClaw-like product. System-level phone control, 50+ packaged capabilities, deep Mi Home IoT integration (1B+ connected devices). Powered by MiMo LLM. Currently invitation-only beta on Xiaomi 17 series.
+description_zh: 小米移动端 AI Agent，国内首款移动原生类 OpenClaw 产品。系统级手机控制，50+ 核心能力，深度集成 Mi Home IoT（10 亿+设备），MiMo 大模型驱动，目前仅限小米 17 系列邀请测试。
 
 openclaw:
-  fork_type: unknown
+  fork_type: independent
   protocol_compat: unknown
   soul_md: null
   mcp_support: null
@@ -16,20 +16,22 @@ openclaw:
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "no"
+  discord: "no"
 
 models:
-  default: null
-  supported: []
-  local_model: null
+  default: MiMo
+  supported: [MiMo]
+  local_model: true
 
-deployment: both
-tags: [xiaomi, iot, smart-home]
-verified: false
+deployment: local
+tags: [xiaomi, mobile, iot, mimo, smart-home, on-device]
+verified: true
+notes: System-level agent, not just a chatbot — reads and controls all Mi Home IoT devices. Strictly invitation-only closed beta as of March 2026.
+notes_zh: 系统级 Agent，可读取并控制所有小米 IoT 设备状态。2026 年 3 月仍为严格邀请制内测，仅限小米 17 系列。
 last_updated: "2026-03-23"

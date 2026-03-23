@@ -4,8 +4,8 @@ vendor: Tencent
 vendor_zh: 腾讯
 release_date: "2026-03"
 category: enterprise
-description: Tencent Lexiang's knowledge management platform with OpenClaw integration.
-description_zh: 腾讯乐享知识库的 OpenClaw 集成版本，面向企业知识管理场景。
+description: Tencent Lexiang's enterprise knowledge management platform with OpenClaw integration. Part of Tencent's full "lobster product matrix" — connects OpenClaw agents to corporate knowledge bases via WeCom.
+description_zh: 腾讯乐享知识库的 OpenClaw 集成版本，是腾讯全系龙虾产品矩阵的组成部分，通过企业微信连接 OpenClaw Agent 与企业知识库。
 
 openclaw:
   fork_type: compatible
@@ -17,19 +17,21 @@ openclaw:
 
 channels:
   wechat_clawbot: "unknown"
-  qq: "unknown"
+  qq: "no"
   wecom: "yes"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "no"
+  discord: "no"
 
 models:
   default: Hunyuan
   supported: [Hunyuan]
-  local_model: null
+  local_model: false
 
 deployment: cloud
-tags: [tencent, knowledge-base, enterprise]
+tags: [tencent, knowledge-base, enterprise, wecom]
 verified: false
+notes: Not a standalone OpenClaw implementation — it's Tencent's enterprise knowledge management product (Lexiang) with an OpenClaw-compatible connector. Details sparse.
+notes_zh: 并非独立 OpenClaw 产品，是腾讯乐享（企业知识管理）加装 OpenClaw 接口的集成版本，信息稀缺。
 last_updated: "2026-03-23"

@@ -1,35 +1,37 @@
 name: AstronClaw
-name_zh: AstronClaw
+name_zh: AstronClaw（讯飞星辰）
 vendor: iFlytek
 vendor_zh: 科大讯飞
 release_date: "2026-03"
-category: desktop
-description: iFlytek's OpenClaw implementation powered by Spark LLM, with speech recognition advantages.
-description_zh: 科大讯飞基于星火大模型的 OpenClaw 实现，具备语音识别优势。
+category: enterprise
+description: iFlytek's enterprise OpenClaw with sandbox security, cloud one-click deployment, and a self-hosted SkillHub registry for managing private enterprise skills. Integrates with WeCom and DingTalk. Speech recognition strength from Spark LLM.
+description_zh: 讯飞企业版 OpenClaw，沙箱安全隔离，云端一键部署，支持私有 SkillHub 注册中心管理企业内部技能，集成企业微信/钉钉，星火大模型语音识别优势加持。
 
 openclaw:
   fork_type: fork
   protocol_compat: full
   soul_md: null
-  mcp_support: null
-  skills_store: null
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "yes"
   feishu: "unknown"
-  dingtalk: "unknown"
+  dingtalk: "yes"
   telegram: "unknown"
   discord: "unknown"
 
 models:
   default: Spark
   supported: [Spark, DeepSeek]
-  local_model: null
+  local_model: false
 
-deployment: both
-tags: [iflytek, spark, voice]
-verified: false
+deployment: cloud
+tags: [iflytek, spark, enterprise, skillhub, voice]
+verified: true
+notes: iFlytek operates its own SkillHub (github.com/iflytek/skillhub) for enterprise private skill governance with RBAC and audit logs.
+notes_zh: 讯飞自建 SkillHub（github.com/iflytek/skillhub），支持企业私有技能 RBAC 权限管理和审计日志。
 last_updated: "2026-03-23"

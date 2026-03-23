@@ -1,18 +1,19 @@
 name: 360 Security Claw
-name_zh: 360 安全 Claw
-vendor: 360 Security
-vendor_zh: 360 安全
+name_zh: 360 安全龙虾
+vendor: Qihoo 360
+vendor_zh: 奇虎 360
+website: https://clawsafe.360.cn
 release_date: "2026-03"
 category: desktop
-description: 360 Security's OpenClaw implementation with focus on cybersecurity tasks and threat detection.
-description_zh: 360 安全的 OpenClaw 实现，聚焦网络安全任务和威胁检测场景。
+description: 360's security-hardened OpenClaw wrapper. Reduces setup from 6+ hours to 10 minutes. WSL virtualized sandbox isolates agent execution, AI security engine blocks skill poisoning and prompt injection. Bundled "360 Claw Guardian" AI security sandbox in PC Manager 18.0.
+description_zh: 360 安全加固版 OpenClaw 封装，6 小时安装简化为 10 分钟。WSL 虚拟化沙箱隔离运行环境，AI 引擎防技能投毒和 Prompt 注入，PC 管家 18.0 附带「龙虾卫士」AI 安全沙箱。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: compatible
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
@@ -26,10 +27,12 @@ channels:
 
 models:
   default: null
-  supported: []
-  local_model: null
+  supported: [DeepSeek, OpenAI-compatible]
+  local_model: false
 
 deployment: local
-tags: ["360", security, cybersecurity]
-verified: false
+tags: ["360", security, sandbox, wsl]
+verified: true
+notes: "SECURITY INCIDENT: 360 shipped a private SSL certificate key inside the installer, despite founder Zhou Hongyi's promises of privacy protection. Trust accordingly."
+notes_zh: "安全事件：360 在安装包中打包了私钥证书，与周鸿祎公开承诺的隐私保护相悖，请自行判断风险。"
 last_updated: "2026-03-23"

@@ -1,37 +1,38 @@
 name: WindClaw
-name_zh: WindClaw
+name_zh: WindClaw（万得投研龙虾）
 vendor: Wind (万得)
 vendor_zh: 万得信息
-release_date: "2026-03"
+website: https://www.windquant.com
+release_date: "2026-03-11"
 category: enterprise
-description: Wind Financial's OpenClaw implementation. Significant because Wind is China's leading financial data terminal — expect deep financial data integration.
-description_zh: 万得信息的 OpenClaw 实现。万得是中国领先的金融数据终端，预期深度集成金融数据能力，面向金融从业者。
+description: Wind's AI investment research agent workstation — "knows research, can evolve, connects data." Deeply integrates Wind's professional financial database with real-time quotes, filings, and industry data. Local deployment with physical data isolation.
+description_zh: 万得投研 AI 智能体工作站，"会研究、能进化、通数据"。深度耦合万得金融数据库，实时行情/财务/公告/行业数据随调随用，本地部署物理隔离。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: fork
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "no"
+  discord: "no"
 
 models:
   default: null
-  supported: []
-  local_model: null
+  supported: [DeepSeek, OpenAI-compatible]
+  local_model: false
 
-deployment: both
-tags: [wind, finance, enterprise, data]
-verified: false
-notes: Wind entering the space is a signal that AI agents are reaching financial industry workflows.
-notes_zh: 万得入场是 AI Agent 渗透金融行业工作流的重要信号。
+deployment: local
+tags: [wind, finance, enterprise, investment-research]
+verified: true
+notes: Wind launch triggered a chain reaction — iFinD announced "iFinD 金融 MCP" the next day, and East Money released "东方财富 Skills" the same night. Over 12 brokerages held OpenClaw roadshows within weeks.
+notes_zh: 万得上线次日，同花顺发布「iFinD 金融 MCP」，当晚东方财富推出「东方财富 Skills」。两周内超 12 家券商密集路演 OpenClaw，场场爆满。
 last_updated: "2026-03-23"

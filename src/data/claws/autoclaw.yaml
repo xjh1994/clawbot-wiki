@@ -1,35 +1,37 @@
 name: AutoClaw
-name_zh: AutoClaw
+name_zh: AutoClaw（澳龙）
 vendor: Zhipu AI
 vendor_zh: 智谱 AI
-release_date: "2026-03"
+release_date: "2026-03-10"
 category: desktop
-description: Zhipu AI's OpenClaw implementation powered by GLM series models.
-description_zh: 智谱 AI 基于 GLM 系列模型的 OpenClaw 实现。
+description: Zhipu AI's one-click desktop OpenClaw (nickname "澳龙"). Ships with 50+ pre-built skills, proprietary Pony-Alpha-2 model optimized for tool-calling, and AutoGLM browser automation. Feishu one-click integration.
+description_zh: 智谱 AI 一键桌面版龙虾（昵称"澳龙"）。预置 50+ 热门 Skills，搭载为工具调用深度优化的 Pony-Alpha-2 模型，内置 AutoGLM Browser-Use 浏览器操作能力，一键集成飞书。
 
 openclaw:
   fork_type: fork
   protocol_compat: full
   soul_md: true
   mcp_support: true
-  skills_store: unknown
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "unknown"
   qq: "unknown"
   wecom: "unknown"
-  feishu: "unknown"
+  feishu: "yes"
   dingtalk: "unknown"
   telegram: "unknown"
   discord: "unknown"
 
 models:
-  default: GLM-4
-  supported: [GLM-4, GLM-4-Air, DeepSeek]
-  local_model: null
+  default: Pony-Alpha-2
+  supported: [Pony-Alpha-2, GLM-4, DeepSeek, Kimi, MiniMax]
+  local_model: false
 
-deployment: both
-tags: [zhipu, glm]
-verified: false
+deployment: local
+tags: [zhipu, glm, browser-automation, one-click]
+verified: true
+notes: AutoGLM browser automation addresses OpenClaw's weakness on complex browser tasks. Pony-Alpha-2 is Zhipu's internal model optimized for agentic skill execution.
+notes_zh: AutoGLM 补足了 OpenClaw 原版浏览器操作的短板；Pony-Alpha-2 是智谱内部专为 Agent 场景优化的模型代号。
 last_updated: "2026-03-23"

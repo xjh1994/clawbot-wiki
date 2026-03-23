@@ -2,34 +2,37 @@ name: ChatClaw
 name_zh: ChatClaw
 vendor: Zhima AI
 vendor_zh: 智麻
+github: https://gitee.com/zhimaAi/ChatClaw
 release_date: "2026-03"
-category: desktop
-description: Zhima AI's ChatClaw implementation. Details TBD.
-description_zh: 智麻的 ChatClaw 实现，具体功能待补充。
+category: open-source
+description: Zhima AI's Go-based OpenClaw alternative — 5-minute setup, 30MB installer, runs on macOS and Windows. Connects to WhatsApp, Telegram, Slack, Discord, Gmail, DingTalk, WeCom, QQ, and Feishu. Built-in skill market, local knowledge base, memory, MCP, and scheduled tasks.
+description_zh: 智麻 Go 语言开源版龙虾，5 分钟上手，30MB 安装包，macOS/Windows 双支持。接入 WhatsApp/Telegram/Slack/Discord/Gmail/钉钉/企业微信/QQ/飞书，内置技能市场/知识库/记忆/MCP/计划任务。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  fork_type: independent
+  protocol_compat: full
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
   wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  qq: "yes"
+  wecom: "yes"
+  feishu: "yes"
+  dingtalk: "yes"
+  telegram: "yes"
+  discord: "yes"
 
 models:
   default: null
-  supported: []
-  local_model: null
+  supported: [DeepSeek, OpenAI-compatible, Ollama]
+  local_model: true
 
-deployment: both
-tags: [zhima]
-verified: false
+deployment: local
+tags: [zhima, go, open-source, knowledge-base, lightweight]
+verified: true
+notes: Go-based binary is significantly lighter than OpenClaw's Node.js stack. Focuses on built-in local knowledge base as a differentiator.
+notes_zh: Go 语言实现，比 OpenClaw 的 Node.js 栈轻量许多；内置本地知识库是核心差异化功能。
 last_updated: "2026-03-23"

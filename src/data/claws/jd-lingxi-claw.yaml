@@ -4,8 +4,8 @@ vendor: JD.com
 vendor_zh: 京东
 release_date: "2026-03"
 category: enterprise
-description: JD.com's Lingxi Claw agent, expected to integrate with JD's supply chain and e-commerce operations.
-description_zh: 京东灵犀 Claw，预期深度整合京东供应链和电商运营场景。
+description: JD.com's Lingxi Claw agent. Expected to integrate with JD's supply chain, logistics, and e-commerce operations. No public launch announcement confirmed as of March 2026.
+description_zh: 京东灵犀 Claw，预期整合京东供应链/物流/电商运营场景，截至 2026 年 3 月尚无公开发布公告。
 
 openclaw:
   fork_type: unknown
@@ -30,6 +30,8 @@ models:
   local_model: null
 
 deployment: cloud
-tags: [jd, ecommerce, supply-chain]
+tags: [jd, ecommerce, supply-chain, logistics]
 verified: false
+notes: Listed in Chinese OpenClaw product roundup articles but no dedicated product page found. JD has cross-border e-commerce agent scenarios as likely use case.
+notes_zh: 出现在国产龙虾产品盘点中，未找到独立产品页面。跨境电商、供应链自动化是预期核心场景。
 last_updated: "2026-03-23"

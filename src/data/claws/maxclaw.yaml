@@ -2,34 +2,37 @@ name: MaxClaw
 name_zh: MaxClaw
 vendor: MiniMax
 vendor_zh: MiniMax
-release_date: "2026-03"
-category: desktop
-description: MiniMax's OpenClaw implementation with multimodal capabilities.
-description_zh: MiniMax 的 OpenClaw 实现，具备多模态能力。
+website: https://agent.minimax.io/max-claw
+release_date: "2026-02-26"
+category: cloud
+description: MiniMax's cloud-hosted OpenClaw mode — 10-second one-click deployment, no server or API key required. Access to 1.6M+ expert AI agents, built-in image/video generation, investment research team, and seamless Feishu/DingTalk integration.
+description_zh: MiniMax 云端 OpenClaw 模式，10 秒一键部署，无需服务器和 API Key。内置投研热点专家、图像/视频生成，超 160 万专家智能体可直接调用，支持飞书/钉钉集成。
 
 openclaw:
   fork_type: fork
   protocol_compat: full
-  soul_md: null
-  mcp_support: null
-  skills_store: null
+  soul_md: true
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
+  wechat_clawbot: "no"
   qq: "unknown"
   wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
+  feishu: "yes"
+  dingtalk: "yes"
   telegram: "unknown"
   discord: "unknown"
 
 models:
-  default: MiniMax-Text-01
-  supported: [MiniMax-Text-01, MiniMax-VL-01]
-  local_model: null
+  default: MiniMax-M2.5
+  supported: [MiniMax-M2.5, MiniMax-VL-01, DeepSeek]
+  local_model: false
 
-deployment: both
-tags: [minimax, multimodal]
-verified: false
+deployment: cloud
+tags: [minimax, cloud, multimodal, expert-agents]
+verified: true
+notes: Over 1.6M community-contributed expert agents covering development, creative writing, audio/video/image generation. Preset investment research workflows and trend-tracking experts included.
+notes_zh: 超 160 万社区专家智能体，覆盖技术开发、创意写作、音视图生成等场景，内置投研热点追踪专家。
 last_updated: "2026-03-23"

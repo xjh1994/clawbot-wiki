@@ -1,35 +1,37 @@
-name: Tencent Cloud Security Claw
-name_zh: 腾讯云保安
+name: Tencent Cloud ADP Claw
+name_zh: 腾讯云 ADP Claw（云保安）
 vendor: Tencent Cloud
 vendor_zh: 腾讯云
 release_date: "2026-03"
 category: enterprise
-description: Tencent Cloud's security-focused OpenClaw agent. Details TBD.
-description_zh: 腾讯云安全方向 Agent，具体功能待补充。
+description: Tencent Cloud's enterprise-grade OpenClaw deployment platform with 5-layer security safeguards — data isolation, access controls, compliance templates, and industry-tested workflow templates. Targets organizations that can't deploy raw OpenClaw due to security concerns.
+description_zh: 腾讯云企业级 OpenClaw 部署平台，五层安全防护（数据隔离/访问控制/合规模板），附带行业验证工作流模板。面向因安全顾虑无法直接使用原版 OpenClaw 的企业客户。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
+  fork_type: compatible
+  protocol_compat: full
   soul_md: null
-  mcp_support: null
-  skills_store: null
+  mcp_support: true
+  skills_store: true
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "yes"
   feishu: "unknown"
   dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  telegram: "no"
+  discord: "no"
 
 models:
-  default: null
-  supported: []
-  local_model: null
+  default: Hunyuan
+  supported: [Hunyuan, DeepSeek, OpenAI-compatible]
+  local_model: false
 
 deployment: cloud
-tags: [tencent, security, cloud]
-verified: false
+tags: [tencent, enterprise, security, compliance]
+verified: true
+notes: Tencent Cloud became an official OpenClaw community sponsor (March 16) after a scraping dispute, deepening their ecosystem commitment.
+notes_zh: 腾讯云于 3 月 16 日成为 OpenClaw 社区官方赞助商（在一次爬虫争议之后），深化生态绑定。
 last_updated: "2026-03-23"

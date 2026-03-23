@@ -1,28 +1,28 @@
 name: Tencent Lobster Butler
-name_zh: 腾讯龙虾管家
+name_zh: 腾讯龙虾管家（电脑管家 AI 沙箱）
 vendor: Tencent
 vendor_zh: 腾讯
-release_date: "2026-03"
+release_date: "2026-03-13"
 category: other
-description: Tencent's lobster-themed agent management tool. Details TBD.
-description_zh: 腾讯龙虾管家，具体功能待补充。
+description: AI security sandbox in Tencent PC Manager 18.0 — not a standalone OpenClaw implementation but a protection layer for all locally-running AI agents (OpenClaw, QClaw, OneClaw, LobsterAI). Controls system access, intercepts abnormal payments, prevents private file access, and supports custom sensitive path blacklists.
+description_zh: 腾讯电脑管家 18.0 内置的 AI 安全沙箱，并非独立 OpenClaw 产品，而是为本地运行的各类 Agent（OpenClaw/QClaw/OneClaw/LobsterAI 等）提供安全防护层。控制系统访问、拦截异常支付、防止私有文件访问、支持敏感路径黑名单。
 
 openclaw:
-  fork_type: unknown
-  protocol_compat: unknown
+  fork_type: compatible
+  protocol_compat: partial
   soul_md: null
   mcp_support: null
   skills_store: null
   openclaw_lag_days: null
 
 channels:
-  wechat_clawbot: "unknown"
-  qq: "unknown"
-  wecom: "unknown"
-  feishu: "unknown"
-  dingtalk: "unknown"
-  telegram: "unknown"
-  discord: "unknown"
+  wechat_clawbot: "no"
+  qq: "no"
+  wecom: "no"
+  feishu: "no"
+  dingtalk: "no"
+  telegram: "no"
+  discord: "no"
 
 models:
   default: null
@@ -30,6 +30,8 @@ models:
   local_model: null
 
 deployment: local
-tags: [tencent]
-verified: false
+tags: [tencent, security, sandbox, pc-manager]
+verified: true
+notes: This is a security wrapper/monitor, not an AI agent itself. Underwent 6 months of internal testing, upgraded 30+ AI security features in v18.0.
+notes_zh: 安全防护层而非 Agent 本体。PC 管家 18.0 经 6 个月内测，升级超 30 项 AI 安全功能。
 last_updated: "2026-03-23"
