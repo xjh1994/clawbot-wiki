@@ -1,6 +1,6 @@
 name: Sealos
 name_en: Sealos
-website: https://sealos.run
+website: https://sealos.run/pricing
 type: paas
 logo_color: "#00A9A5"
 description: Kubernetes-native cloud OS PaaS from China. Cheap compute, China-hosted (Guangzhou), low latency for mainland users.

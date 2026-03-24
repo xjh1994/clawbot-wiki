@@ -1,6 +1,6 @@
 name: 阿里云
 name_en: Alibaba Cloud
-website: https://www.aliyun.com
+website: https://www.aliyun.com/minisite/goods
 type: public-cloud
 logo_color: "#FF6A00"
 description: Alibaba's public cloud, China's largest. Strong in AI inference (PAI-EAS), serverless (FC), and container (ACK). Best for Qwen-based deployments.

@@ -34,11 +34,17 @@ models:
 deployment: local
 cloud_deploy:
   - name: Railway
+    url: https://railway.app
   - name: Render
+    url: https://render.com
   - name: Fly.io
+    url: https://fly.io
   - name: Zeabur
+    url: https://zeabur.com/pricing
   - name: Koyeb
+    url: https://www.koyeb.com
   - name: Leapcell
+    url: https://leapcell.io/pricing
 tags: [original, open-source, privacy, local, cross-platform]
 verified: true
 notes: "Originally named Clawdbot (Nov 2025), renamed to OpenClaw on Jan 30, 2026. The Chinese \"小龙虾\" nickname and all \"Claw-series\" products trace back to this project."

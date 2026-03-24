@@ -1,6 +1,6 @@
 name: 京东云
 name_en: JD Cloud
-website: https://www.jdcloud.com
+website: https://www.jdcloud.com/cn/products/virtual-machines
 type: public-cloud
 logo_color: "#E52222"
 description: JD.com's cloud. Strong in CDN and object storage; logistics-adjacent scenarios. Competitive pricing in North China regions.

@@ -1,6 +1,6 @@
 name: Leapcell
 name_en: Leapcell
-website: https://leapcell.io
+website: https://leapcell.io/pricing
 type: paas
 logo_color: "#7C3AED"
 description: Modern serverless PaaS, pay-per-request with free tier. Great for low-traffic OpenClaw deployments with zero idle cost.

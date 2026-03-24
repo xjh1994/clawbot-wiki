@@ -34,13 +34,21 @@ models:
 deployment: local
 cloud_deploy:
   - name: Zeabur
+    url: https://zeabur.com/pricing
   - name: Sealos
+    url: https://sealos.run/pricing
   - name: Leapcell
+    url: https://leapcell.io/pricing
   - name: Railway
+    url: https://railway.app
   - name: Render
+    url: https://render.com
   - name: Fly.io
+    url: https://fly.io
   - name: 阿里云函数计算 FC
+    url: https://www.aliyun.com/product/fc
   - name: 腾讯云 SCF
+    url: https://cloud.tencent.com/product/scf
 tags: [open-source, rust, lightweight, self-hosted]
 verified: true
 notes: Best choice for self-hosted, resource-constrained environments.

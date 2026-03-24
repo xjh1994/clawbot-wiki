@@ -34,11 +34,17 @@ models:
 deployment: both
 cloud_deploy:
   - name: 阿里云 PAI-EAS
+    url: https://www.aliyun.com/product/bigdata/learn/pai
   - name: 阿里云函数计算 FC
+    url: https://www.aliyun.com/product/fc
   - name: 阿里云 ECS
+    url: https://www.aliyun.com/product/ecs
   - name: Zeabur
+    url: https://zeabur.com/pricing
   - name: Sealos
+    url: https://sealos.run/pricing
   - name: 腾讯云 SCF
+    url: https://cloud.tencent.com/product/scf
 tags: [alibaba, open-source, qwen, apache2]
 verified: true
 notes: Not a fork of OpenClaw — independently designed by Alibaba to be simpler and more "local + cloud" unified. Name means "Co Personal Agent Workstation" (协同个人智能体工作台).
