@@ -1,0 +1,34 @@
+name: Zeabur
+name_en: Zeabur
+website: https://zeabur.com
+type: paas
+logo_color: "#6B4EFF"
+description: PaaS with one-click deploy, strong Chinese community adoption. Region options include Asia (Hong Kong/Singapore). Git push to deploy.
+description_zh: 一键部署 PaaS，中文社区热门，支持香港/新加坡区域，Git 推送自动部署，国内访问较快。
+deals:
+  - name: Developer 免费计划
+    name_zh: Developer 免费计划
+    product: 容器托管
+    price: 0
+    currency: usd
+    period: month
+    eligible: all
+    limited: false
+    url: https://zeabur.com/pricing
+    note: Free tier with limited compute, suitable for testing.
+    note_zh: 免费层含有限算力，适合测试和小流量场景
+    verified_date: "2026-03-24"
+  - name: Pro 计划
+    name_zh: Pro 计划
+    product: 容器托管
+    price: 5
+    currency: usd
+    period: month
+    eligible: all
+    limited: false
+    url: https://zeabur.com/pricing
+    note: $5/month base + resource usage. HK region recommended for China accessibility.
+    note_zh: $5/月起含基础资源，香港区域国内访问体验最佳
+    verified_date: "2026-03-24"
+tags: [zeabur, paas, hongkong, singapore, one-click]
+last_updated: "2026-03-24"

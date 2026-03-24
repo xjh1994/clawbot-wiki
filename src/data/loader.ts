@@ -1,7 +1,8 @@
 import { parse as parseYaml } from 'yaml'
-import type { ClawEntry } from '../types'
+import type { ClawEntry, ProviderEntry } from '../types'
 
 const rawFiles = import.meta.glob('./claws/*.yaml', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
+const rawProviders = import.meta.glob('./providers/*.yaml', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
 
 function parseAll(): ClawEntry[] {
   return Object.entries(rawFiles)
@@ -24,6 +25,16 @@ export function getAllClaws(): ClawEntry[] {
 
 export function getClawBySlug(slug: string): ClawEntry | undefined {
   return parseAll().find(c => c.slug === slug)
+}
+
+export function getAllProviders(): ProviderEntry[] {
+  return Object.entries(rawProviders)
+    .map(([path, raw]) => {
+      const slug = path.replace('./providers/', '').replace('.yaml', '')
+      const data = parseYaml(raw) as object
+      return { slug, ...data } as ProviderEntry
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, 'zh'))
 }
 
 export function getStats() {

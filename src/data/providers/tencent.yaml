@@ -1,0 +1,58 @@
+name: 腾讯云
+name_en: Tencent Cloud
+website: https://cloud.tencent.com
+type: public-cloud
+logo_color: "#006EFF"
+description: Tencent's public cloud. Competitive lightweight server pricing, strong gaming and IM scenarios. Good WeChat ecosystem integration.
+description_zh: 腾讯旗下公有云。轻量服务器性价比高，游戏和 IM 场景强，微信生态集成天然优势。
+deals:
+  - name: 轻量服务器新用户特惠 2C2G
+    name_zh: 轻量应用服务器新用户特惠 2C2G
+    product: 轻量应用服务器
+    cpu: 2
+    ram: 2
+    disk: 50
+    disk_type: SSD
+    bandwidth: 3
+    price: 79
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://cloud.tencent.com/act/new
+    note_zh: 新用户专享，限购 1 台，到期续费价格较高
+    verified_date: "2026-03-24"
+  - name: 轻量服务器新用户特惠 2C4G
+    name_zh: 轻量应用服务器新用户特惠 2C4G
+    product: 轻量应用服务器
+    cpu: 2
+    ram: 4
+    disk: 80
+    disk_type: SSD
+    bandwidth: 5
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://cloud.tencent.com/act/new
+    note_zh: 新用户专享，含 5Mbps 带宽，OpenClaw 类项目推荐
+    verified_date: "2026-03-24"
+  - name: CVM 蜂驰型新用户折扣
+    name_zh: 云服务器 CVM 蜂驰型新用户折扣
+    product: 云服务器 CVM
+    cpu: 4
+    ram: 8
+    disk: 100
+    disk_type: SSD
+    bandwidth: 5
+    price: 199
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://cloud.tencent.com/act/new
+    note_zh: 算力较强，适合本地模型推理，新用户首单约 2.7 折
+    verified_date: "2026-03-24"
+tags: [tencent, cvm, lighthouse, wechat, gaming]
+last_updated: "2026-03-24"

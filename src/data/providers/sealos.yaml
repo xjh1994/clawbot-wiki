@@ -1,0 +1,33 @@
+name: Sealos
+name_en: Sealos
+website: https://sealos.run
+type: paas
+logo_color: "#00A9A5"
+description: Kubernetes-native cloud OS PaaS from China. Cheap compute, China-hosted (Guangzhou), low latency for mainland users.
+description_zh: 国产 Kubernetes 原生云 OS，计算价格低，数据中心在广州，国内延迟极低。
+deals:
+  - name: 免费额度
+    name_zh: 新用户免费额度
+    product: 云应用托管
+    price: 0
+    currency: cny
+    period: once
+    eligible: new
+    limited: false
+    url: https://sealos.run/pricing
+    note_zh: 新用户注册赠送免费额度，可用于 OpenClaw 类项目试部署
+    verified_date: "2026-03-24"
+  - name: 按量计费
+    name_zh: 按量计费（极低单价）
+    product: 云应用托管
+    price: 0.1
+    currency: cny
+    period: once
+    eligible: all
+    limited: false
+    url: https://sealos.run/pricing
+    note: From ¥0.1/hour for 0.1C/64MB. Cheapest per-unit compute among domestic PaaS.
+    note_zh: 0.1C/64MB 从 ¥0.1/小时起，国内 PaaS 中单价最低，适合轻量应用
+    verified_date: "2026-03-24"
+tags: [sealos, paas, kubernetes, guangzhou, cheap, mainland]
+last_updated: "2026-03-24"

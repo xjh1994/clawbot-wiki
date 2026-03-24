@@ -1,0 +1,42 @@
+name: 京东云
+name_en: JD Cloud
+website: https://www.jdcloud.com
+type: public-cloud
+logo_color: "#E52222"
+description: JD.com's cloud. Strong in CDN and object storage; logistics-adjacent scenarios. Competitive pricing in North China regions.
+description_zh: 京东旗下云服务。CDN 和对象存储竞争力强，华北区域价格有优势，物流场景深度集成。
+deals:
+  - name: 轻量云主机新用户特惠
+    name_zh: 轻量云主机新用户特惠
+    product: 轻量云主机
+    cpu: 2
+    ram: 2
+    disk: 40
+    disk_type: SSD
+    bandwidth: 3
+    price: 79
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.jdcloud.com/cn/activity/new
+    note_zh: 新用户实名认证后可购，限 1 台
+    verified_date: "2026-03-24"
+  - name: 云主机新用户首月 1 元
+    name_zh: 云主机新用户首月 1 元体验
+    product: 云主机
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 1
+    currency: cny
+    period: month
+    eligible: new
+    limited: false
+    url: https://www.jdcloud.com/cn/activity/new
+    note_zh: 首月 1 元体验，次月恢复正常价，适合测试部署
+    verified_date: "2026-03-24"
+tags: [jd, jdcloud, cdn, north-china]
+last_updated: "2026-03-24"

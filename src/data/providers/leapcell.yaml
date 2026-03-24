@@ -1,0 +1,34 @@
+name: Leapcell
+name_en: Leapcell
+website: https://leapcell.io
+type: paas
+logo_color: "#7C3AED"
+description: Modern serverless PaaS, pay-per-request with free tier. Great for low-traffic OpenClaw deployments with zero idle cost.
+description_zh: 现代化 Serverless PaaS，按请求计费，有免费层，零流量零费用。低频 OpenClaw 部署的理想选择。
+deals:
+  - name: 免费层
+    name_zh: 永久免费层
+    product: Serverless 容器
+    price: 0
+    currency: usd
+    period: month
+    eligible: all
+    limited: false
+    url: https://leapcell.io/pricing
+    note: Free tier includes 100k requests/month, 256MB RAM. Sufficient for personal OpenClaw instances.
+    note_zh: 每月 10 万次请求免费，256MB 内存，个人 OpenClaw 实例够用
+    verified_date: "2026-03-24"
+  - name: 按量付费
+    name_zh: 按量计费（Pay-as-you-go）
+    product: Serverless 容器
+    price: 0.06
+    currency: usd
+    period: once
+    eligible: all
+    limited: false
+    url: https://leapcell.io/pricing
+    note: $0.06/million requests beyond free tier. Auto-scale to zero.
+    note_zh: 超出免费额度后 $0.06/百万次请求，自动缩容到零，无闲置费用
+    verified_date: "2026-03-24"
+tags: [leapcell, paas, serverless, international, free-tier]
+last_updated: "2026-03-24"

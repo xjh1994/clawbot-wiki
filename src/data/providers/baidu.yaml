@@ -1,0 +1,53 @@
+name: 百度智能云
+name_en: Baidu AI Cloud
+website: https://cloud.baidu.com
+type: public-cloud
+logo_color: "#2932E1"
+description: Baidu's cloud, tightly integrated with ERNIE models and Qianfan AI platform. Aggressive discounts for new users.
+description_zh: 百度旗下云服务，与文心一言和千帆大模型平台深度集成，新用户折扣力度大。
+deals:
+  - name: BCC 轻量服务器新用户特惠
+    name_zh: 云服务器 BCC 新用户特惠
+    product: 云服务器 BCC
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://cloud.baidu.com/campaign/experience/index.html
+    note_zh: 新用户首购，实名认证后可购，限 1 台
+    verified_date: "2026-03-24"
+  - name: 轻量云主机 6.6 元/月
+    name_zh: 轻量应用云主机 6.6 元/月
+    product: 轻量应用云主机
+    cpu: 1
+    ram: 1
+    disk: 40
+    disk_type: SSD
+    bandwidth: 3
+    price: 6.6
+    currency: cny
+    period: month
+    eligible: new
+    limited: false
+    url: https://cloud.baidu.com/product/bcc.html
+    note_zh: 入门级，资源较小，仅适合轻量部署
+    verified_date: "2026-03-24"
+  - name: 千帆 ERNIE 新用户免费额度
+    name_zh: 千帆大模型平台新用户免费 Token
+    product: 千帆大模型平台
+    price: 0
+    currency: cny
+    period: once
+    eligible: new
+    limited: false
+    url: https://qianfan.cloud.baidu.com
+    note_zh: 新用户注册后赠送 ERNIE 系列模型免费调用额度，文心一言 API 集成
+    verified_date: "2026-03-24"
+tags: [baidu, bcc, ernie, qianfan, ai-platform]
+last_updated: "2026-03-24"

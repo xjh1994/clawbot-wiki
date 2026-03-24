@@ -1,0 +1,42 @@
+name: 天翼云
+name_en: China Telecom Cloud
+website: https://www.ctyun.cn
+type: operator
+logo_color: "#1677FF"
+description: China Telecom's cloud. State-owned, strong compliance posture, vast domestic fiber backbone. Popular in government and education sectors.
+description_zh: 中国电信旗下云服务，国资背景，合规性强，电信自有光纤骨干网，政务和教育行业广泛使用。
+deals:
+  - name: 新用户云主机特惠 2C4G
+    name_zh: 弹性云主机新用户特惠 2C4G
+    product: 弹性云主机
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 9.9
+    currency: cny
+    period: month
+    eligible: new
+    limited: true
+    url: https://www.ctyun.cn/act/newcomerzone
+    note_zh: 新用户限时抢购，需电信实名，国内备案速度快
+    verified_date: "2026-03-24"
+  - name: 轻量云主机年付套餐
+    name_zh: 轻量级云主机年付套餐
+    product: 轻量级云主机
+    cpu: 2
+    ram: 2
+    disk: 40
+    disk_type: SSD
+    bandwidth: 3
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.ctyun.cn/act/newcomerzone
+    note_zh: 政府采购优先选项，ICP 备案速度在三大运营商中最快
+    verified_date: "2026-03-24"
+tags: [ctyun, telecom, operator, government, education, icp]
+last_updated: "2026-03-24"

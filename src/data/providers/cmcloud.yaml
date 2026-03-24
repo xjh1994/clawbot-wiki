@@ -1,0 +1,42 @@
+name: 移动云
+name_en: China Mobile Cloud
+website: https://ecloud.10086.cn
+type: operator
+logo_color: "#00A050"
+description: China Mobile's cloud. Largest domestic telecom network, strong in IoT and edge computing scenarios.
+description_zh: 中国移动旗下云服务，依托全国最大电信网络，物联网和边缘计算场景有优势。
+deals:
+  - name: 新用户云主机首月 1 元
+    name_zh: 云主机新用户首月 1 元体验
+    product: 弹性云主机
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 1
+    currency: cny
+    period: month
+    eligible: new
+    limited: false
+    url: https://ecloud.10086.cn/home/activity
+    note_zh: 新用户首月 1 元，次月按需计费，适合短期测试
+    verified_date: "2026-03-24"
+  - name: 云主机年付新用户特惠
+    name_zh: 弹性云主机年付新用户特惠
+    product: 弹性云主机
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://ecloud.10086.cn/home/activity
+    note_zh: 10086 号段用户额外优惠，国内覆盖最广的骨干网
+    verified_date: "2026-03-24"
+tags: [cmcloud, mobile, operator, iot, edge]
+last_updated: "2026-03-24"

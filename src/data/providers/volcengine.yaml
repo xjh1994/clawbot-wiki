@@ -1,0 +1,54 @@
+name: 火山引擎
+name_en: Volcengine
+website: https://www.volcengine.com
+type: public-cloud
+logo_color: "#1664FF"
+description: ByteDance's cloud platform. Aggressive pricing for new users, strong in video/CDN and AI inference (ARK). DeepSeek API among the cheapest.
+description_zh: 字节跳动旗下云平台。新用户折扣力度大，视频/CDN 和 AI 推理（方舟平台）强，DeepSeek API 价格极具竞争力。
+deals:
+  - name: 轻量服务器新用户特惠 2C4G
+    name_zh: 轻量应用服务器新用户特惠 2C4G
+    product: 轻量应用服务器
+    cpu: 2
+    ram: 4
+    disk: 80
+    disk_type: SSD
+    bandwidth: 5
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.volcengine.com/activity/new-user
+    note_zh: 新用户专享，含 5Mbps 带宽
+    verified_date: "2026-03-24"
+  - name: ECS 新用户首单折扣
+    name_zh: 云服务器 ECS 新用户首单折扣
+    product: 云服务器 ECS
+    cpu: 2
+    ram: 4
+    disk: 100
+    disk_type: ESSD
+    bandwidth: 5
+    price: 199
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.volcengine.com/activity/new-user
+    note_zh: 新用户首单低至 1 折，实际折扣随活动变化
+    verified_date: "2026-03-24"
+  - name: 方舟 DeepSeek-V3 API
+    name_zh: 方舟平台 DeepSeek-V3 API
+    product: AI 推理 API
+    price: 2
+    currency: cny
+    period: once
+    eligible: all
+    limited: false
+    url: https://www.volcengine.com/product/ark
+    note: ¥2/M tokens (input), one of cheapest DeepSeek endpoints in China
+    note_zh: 输入约 ¥2/百万 token，国内最低价之一，适合 OpenClaw 类项目调用
+    verified_date: "2026-03-24"
+tags: [bytedance, ecs, deepseek, ark, cdn, video]
+last_updated: "2026-03-24"

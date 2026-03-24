@@ -1,0 +1,42 @@
+name: 雨云
+name_en: Rainyun
+website: https://www.rainyun.com
+type: public-cloud
+logo_color: "#3B82F6"
+description: Budget Chinese cloud provider popular among indie devs and students. Very low-cost VPS and game servers, multiple domestic regions.
+description_zh: 面向个人开发者和学生的低价云服务商，VPS 和游戏服务器价格极低，国内多节点。
+deals:
+  - name: 普通 VPS 入门
+    name_zh: 普通 VPS 入门套餐
+    product: VPS 云主机
+    cpu: 1
+    ram: 1
+    disk: 20
+    disk_type: SSD
+    bandwidth: 5
+    price: 4
+    currency: cny
+    period: month
+    eligible: all
+    limited: false
+    url: https://www.rainyun.com/cloud/vps
+    note_zh: 适合超轻量 OpenClaw Bot 实例，资源有限
+    verified_date: "2026-03-24"
+  - name: 高防 VPS
+    name_zh: 高防 VPS
+    product: 高防 VPS
+    cpu: 2
+    ram: 2
+    disk: 40
+    disk_type: SSD
+    bandwidth: 10
+    price: 12
+    currency: cny
+    period: month
+    eligible: all
+    limited: false
+    url: https://www.rainyun.com/cloud/vps
+    note_zh: 含 DDoS 防护，适合对外提供服务的 Agent，价格在国内属极低水平
+    verified_date: "2026-03-24"
+tags: [rainyun, vps, budget, student, ddos-protection, gaming]
+last_updated: "2026-03-24"

@@ -1,0 +1,58 @@
+name: 华为云
+name_en: Huawei Cloud
+website: https://www.huaweicloud.com
+type: public-cloud
+logo_color: "#CF0A2C"
+description: Huawei's public cloud. Strong enterprise compliance, Ascend GPU support, preferred by government and finance sectors.
+description_zh: 华为旗下公有云。企业合规优势突出，昇腾 GPU 支持，政府和金融行业首选。
+deals:
+  - name: 鲲鹏 ECS 9.9 元/月
+    name_zh: 鲲鹏通用计算 ECS 9.9 元/月
+    product: 弹性云服务器 ECS
+    cpu: 1
+    ram: 2
+    disk: 40
+    disk_type: 高IO
+    bandwidth: 1
+    price: 9.9
+    currency: cny
+    period: month
+    eligible: new
+    limited: true
+    url: https://www.huaweicloud.com/activity/activity_9-9.html
+    note_zh: 鲲鹏架构，限量抢购，需新用户实名认证，ARM 架构需注意镜像兼容性
+    verified_date: "2026-03-24"
+  - name: 通用 ECS 新用户套餐 2C4G
+    name_zh: 通用计算增强型 ECS 2C4G 新用户套餐
+    product: 弹性云服务器 ECS
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: 超高IO SSD
+    bandwidth: 5
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.huaweicloud.com/activity
+    note_zh: 新用户首购，x86 架构，OpenClaw 部署兼容性最好
+    verified_date: "2026-03-24"
+  - name: 轻量服务器入门套餐
+    name_zh: 华为云耀云服务器 L 实例
+    product: 云耀云服务器
+    cpu: 2
+    ram: 2
+    disk: 40
+    disk_type: SSD
+    bandwidth: 3
+    price: 89
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.huaweicloud.com/product/hecs.html
+    note_zh: 云耀服务器轻量版，适合入门
+    verified_date: "2026-03-24"
+tags: [huawei, ecs, ascend, kunpeng, enterprise, government]
+last_updated: "2026-03-24"

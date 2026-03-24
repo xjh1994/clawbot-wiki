@@ -1,0 +1,54 @@
+name: UCloud
+name_en: UCloud
+website: https://www.ucloud.cn
+type: public-cloud
+logo_color: "#0055CC"
+description: Independent Chinese cloud with strong overseas node coverage (26 regions, 33 DCs). Popular for cross-border deployments and gaming.
+description_zh: 国内独立云厂商，海外节点覆盖最全（26 地区 33 数据中心），出海业务和游戏场景热门选择。
+deals:
+  - name: 轻量应用云主机 6.9 元/月
+    name_zh: 轻量应用云主机 6.9 元/月
+    product: 轻量应用云主机
+    cpu: 2
+    ram: 2
+    disk: 40
+    disk_type: SSD
+    bandwidth: 3
+    price: 6.9
+    currency: cny
+    period: month
+    eligible: new
+    limited: false
+    url: https://www.ucloud.cn/site/active/kuaijiesale.html
+    note_zh: 国内外均有节点可选，性价比高
+    verified_date: "2026-03-24"
+  - name: 快杰 O 型 4C16G 特惠
+    name_zh: 快杰 O 型云主机 4C16G
+    product: 快杰云主机
+    cpu: 4
+    ram: 16
+    disk: 100
+    disk_type: RSSD
+    bandwidth: 10
+    price: 29
+    currency: cny
+    period: month
+    eligible: new
+    limited: true
+    url: https://www.ucloud.cn/site/active/kuaijiesale.html
+    note_zh: 新一代高性能 CPU，适合本地模型推理，限量特惠价
+    verified_date: "2026-03-24"
+  - name: 出海专区折扣
+    name_zh: 海外节点出海专区
+    product: 云主机（海外节点）
+    price: 100
+    currency: cny
+    period: year
+    eligible: all
+    limited: false
+    url: https://www.ucloud.cn/site/active/kuaijiesale.html
+    note: Overseas nodes from ¥100/year, up to 0.8% off for bulk
+    note_zh: 海外节点 100 元/年起，多台采购低至 0.8 折，出海部署首选
+    verified_date: "2026-03-24"
+tags: [ucloud, overseas, gaming, cdn, cross-border]
+last_updated: "2026-03-24"

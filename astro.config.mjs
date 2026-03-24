@@ -29,6 +29,7 @@ export default defineConfig({
           translations: { 'zh-CN': '概览' },
           items: [
             { label: 'All Claws', translations: { 'zh-CN': '全部 Claw' }, link: '/claws/' },
+            { label: 'Providers & Deals', translations: { 'zh-CN': '云厂商 & 套餐' }, link: '/providers/' },
             { label: 'Submit / Edit', translations: { 'zh-CN': '投稿 / 编辑' }, link: '/submit/' },
           ],
         },

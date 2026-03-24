@@ -1,0 +1,42 @@
+name: 联通云
+name_en: China Unicom Cloud
+website: https://www.cucloud.cn
+type: operator
+logo_color: "#D40027"
+description: China Unicom's cloud. Hybrid cloud specialization, carrier-grade reliability, north China network advantage.
+description_zh: 中国联通旗下云服务，混合云优势明显，运营商级可靠性，华北区域网络优势突出。
+deals:
+  - name: 云服务器新用户首月 1 元
+    name_zh: 云服务器新用户首月 1 元
+    product: 弹性云服务器
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 1
+    currency: cny
+    period: month
+    eligible: new
+    limited: false
+    url: https://www.cucloud.cn/activity
+    note_zh: 新用户首月 1 元，联通网段可享额外折扣
+    verified_date: "2026-03-24"
+  - name: 云服务器年付新用户特惠
+    name_zh: 弹性云服务器年付新用户特惠
+    product: 弹性云服务器
+    cpu: 2
+    ram: 4
+    disk: 40
+    disk_type: SSD
+    bandwidth: 5
+    price: 99
+    currency: cny
+    period: year
+    eligible: new
+    limited: false
+    url: https://www.cucloud.cn/activity
+    note_zh: 华北区域 BGP 网络，混合云和政企专线方案完善
+    verified_date: "2026-03-24"
+tags: [cucloud, unicom, operator, hybrid-cloud, north-china]
+last_updated: "2026-03-24"
