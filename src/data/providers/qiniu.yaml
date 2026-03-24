@@ -1,0 +1,57 @@
+name: 七牛云
+name_en: Qiniu Cloud
+website: https://www.qiniu.com/products/qvm
+type: public-cloud
+logo_color: "#0D6EFD"
+description: Storage-origin cloud from Qiniu. Known for Kodo object storage and CDN. Compute lineup includes QVM (ECS), LAS (full-stack app server with AI Agent Sandbox), and QApp (container platform). No standalone FaaS product. AI inference API supports OpenAI/Anthropic-compatible endpoints.
+description_zh: 以 Kodo 对象存储起家的云厂商。计算产品包括云主机 QVM、全栈应用服务器 LAS（含 AI Agent Sandbox，启动 <200ms）、容器轻应用平台 QApp。暂无独立函数计算/FaaS 产品。AI 推理服务兼容 OpenAI/Anthropic API，支持 MCP 协议。
+deals:
+  - name: LAS Full-Stack App Server (Mainland)
+    name_zh: 全栈应用服务器 LAS 大陆最低套餐
+    product: 全栈应用服务器 LAS
+    price: 15
+    currency: cny
+    period: month
+    eligible: all
+    limited: false
+    url: https://www.qiniu.com/products/las
+    note_zh: 大陆地域最低 ¥15/月，含 AI Agent Sandbox
+    verified_date: "2026-03-24"
+  - name: LAS Full-Stack App Server (HK/SG/Tokyo)
+    name_zh: 全栈应用服务器 LAS 海外最低套餐
+    product: 全栈应用服务器 LAS
+    price: 8.8
+    currency: cny
+    period: month
+    eligible: all
+    limited: false
+    url: https://www.qiniu.com/products/las
+    note_zh: 港/新/东京地域 ¥8.8/月，适合面向海外用户部署
+    verified_date: "2026-03-24"
+  - name: QVM New User Promo 2C2G
+    name_zh: 云主机 QVM 新用户特惠 2C2G
+    product: 云主机 QVM
+    cpu: 2
+    ram: 2
+    price: 54.92
+    currency: cny
+    period: month
+    eligible: new
+    limited: false
+    url: https://www.qiniu.com/prices/qvm
+    note_zh: T6 突发型，新用户起步价，适合轻量部署
+    verified_date: "2026-03-24"
+  - name: AI Inference API Free Quota
+    name_zh: AI 大模型推理免费额度
+    product: AI 大模型推理服务
+    price: 0
+    currency: cny
+    period: once
+    eligible: new
+    limited: true
+    url: https://www.qiniu.com/ai/models
+    note: 3M free tokens on registration; supports Kimi, DeepSeek, Doubao, Qwen; OpenAI/Anthropic-compatible; MCP support
+    note_zh: 注册赠 300 万 Token，支持 Kimi/DeepSeek/豆包/Qwen，兼容 OpenAI/Anthropic API，支持 MCP 协议
+    verified_date: "2026-03-24"
+tags: [storage, kodo, cdn, qvm, las, ai-inference, mcp]
+last_updated: "2026-03-24"
