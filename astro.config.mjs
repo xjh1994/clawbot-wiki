@@ -45,6 +45,9 @@ export default defineConfig({
           ],
         },
       ],
+      components: {
+        Search: './src/components/overrides/Search.astro',
+      },
       head: [
         { tag: 'link', attrs: { rel: 'icon', href: '/favicon.svg' } },
       ],

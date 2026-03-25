@@ -1,0 +1,30 @@
+---
+import Default from '@astrojs/starlight/components/Search.astro'
+---
+<div style="display:flex;align-items:center;gap:.6rem">
+  <Default {...Astro.props}><slot /></Default>
+  <a
+    href="https://clawbothub.cn"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="一键部署适配微信 ClawBot 的 OpenClaw，支持路由到多个实例"
+    style="
+      display:inline-flex;
+      align-items:center;
+      gap:.3rem;
+      padding:.28rem .6rem;
+      border-radius:.4rem;
+      border:1px solid var(--sl-color-accent);
+      color:var(--sl-color-accent);
+      font-size:.78rem;
+      font-weight:600;
+      white-space:nowrap;
+      text-decoration:none;
+      transition:background .15s,color .15s;
+    "
+    onmouseover="this.style.background='var(--sl-color-accent)';this.style.color='#fff'"
+    onmouseout="this.style.background='';this.style.color='var(--sl-color-accent)'"
+  >
+    ClawBotHub ↗
+  </a>
+</div>
